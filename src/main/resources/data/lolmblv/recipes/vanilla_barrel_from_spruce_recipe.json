@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "barrel",
+  "pattern": [
+    "#-#",
+    "# #",
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:spruce_planks"
+    },
+    "-": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "result": {
+    "count": 1,
+    "item": "minecraft:barrel"
+  }
+}
