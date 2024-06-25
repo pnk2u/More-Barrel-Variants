@@ -1,8 +1,7 @@
-
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-     "has_planks": {
+    "has_planks": {
       "conditions": {
         "items": [
           {
@@ -22,15 +21,14 @@
     }
   },
   "requirements": [
-  [
-    "has_planks",
-      "has_the_recipe"
+    [
+      "has_the_recipe",
+      "has_planks"
     ]
   ],
   "rewards": {
     "recipes": [
       "lolmblv:vanilla_barrel_from_spruce_recipe"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
