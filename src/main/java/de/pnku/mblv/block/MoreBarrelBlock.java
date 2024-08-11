@@ -23,12 +23,12 @@ public class MoreBarrelBlock extends BarrelBlock {
     public final String barrelWoodType;
 
     public MoreBarrelBlock(MapColor colour, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour));
+        super(Properties.copy(Blocks.BARREL).mapColor(colour));
         this.barrelWoodType = barrelWoodType;
     }
 
     public MoreBarrelBlock(MapColor colour, SoundType soundType, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).sound(soundType));
+        super(Properties.copy(Blocks.BARREL).mapColor(colour).sound(soundType));
         this.barrelWoodType = barrelWoodType;
     }
 

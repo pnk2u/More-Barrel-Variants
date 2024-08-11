@@ -43,7 +43,7 @@ public class MblvBlockInit {
         registerBlock(CRIMSON_BARREL);
         registerBlock(WARPED_BARREL);
 
-        MORE_BARREL_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBarrelVariants.asId("more_barrel"), BlockEntityType.Builder.of(MoreBarrelBlockEntity::new, MblvBlockInit.more_barrels.toArray(Block[]::new)).build());
+        MORE_BARREL_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBarrelVariants.asId("more_barrel"), BlockEntityType.Builder.of(MoreBarrelBlockEntity::new, MblvBlockInit.more_barrels.toArray(Block[]::new)).build(null));
 
     }
 
