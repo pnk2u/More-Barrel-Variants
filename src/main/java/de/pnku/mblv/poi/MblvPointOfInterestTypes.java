@@ -21,9 +21,9 @@ public class MblvPointOfInterestTypes {
                 .getPointOfInterestStatesToType();
 
         Holder<PoiType> fishermanEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
-                .getHolder(PoiTypes.FISHERMAN).get();
+                .get(PoiTypes.FISHERMAN).get();
 
-        PoiType fishermanPoiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.get(PoiTypes.FISHERMAN);
+        PoiType fishermanPoiType = BuiltInRegistries.POINT_OF_INTEREST_TYPE.getValue(PoiTypes.FISHERMAN);
 
         List<BlockState> fishermanBlockStates = new ArrayList<BlockState>(fishermanPoiType.matchingStates);
 

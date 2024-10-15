@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "tag": "lieonstudio:barrels"
-    }
+    "#lieonstudio:barrels"
   ],
   "result": {
     "count": 1,

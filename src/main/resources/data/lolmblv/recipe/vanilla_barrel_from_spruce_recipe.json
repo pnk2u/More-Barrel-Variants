@@ -7,12 +7,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:spruce_planks"
-    },
-    "-": {
-      "item": "minecraft:spruce_slab"
-    }
+    "#": "minecraft:spruce_planks",
+    "-": "minecraft:spruce_slab"
   },
   "result": {
     "count": 1,

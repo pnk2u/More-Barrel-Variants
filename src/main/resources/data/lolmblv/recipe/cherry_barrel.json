@@ -7,12 +7,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cherry_planks"
-    },
-    "-": {
-      "item": "minecraft:cherry_slab"
-    }
+    "#": "minecraft:cherry_planks",
+    "-": "minecraft:cherry_slab"
   },
   "result": {
     "count": 1,

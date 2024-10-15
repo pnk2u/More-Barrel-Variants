@@ -5,23 +5,28 @@ import de.pnku.mblv.block.MoreBarrelBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
 public class MblvItemInit {
-    public static final BlockItem OAK_BARREL_I = new BlockItem(MblvBlockInit.OAK_BARREL, new Item.Properties());
-    public static final BlockItem BIRCH_BARREL_I = new BlockItem(MblvBlockInit.BIRCH_BARREL, new Item.Properties());
-    public static final BlockItem JUNGLE_BARREL_I = new BlockItem(MblvBlockInit.JUNGLE_BARREL, new Item.Properties());
-    public static final BlockItem ACACIA_BARREL_I = new BlockItem(MblvBlockInit.ACACIA_BARREL, new Item.Properties());
-    public static final BlockItem DARK_OAK_BARREL_I = new BlockItem(MblvBlockInit.DARK_OAK_BARREL, new Item.Properties());
-    public static final BlockItem MANGROVE_BARREL_I = new BlockItem(MblvBlockInit.MANGROVE_BARREL, new Item.Properties());
-    public static final BlockItem CHERRY_BARREL_I = new BlockItem(MblvBlockInit.CHERRY_BARREL, new Item.Properties());
-    public static final BlockItem BAMBOO_BARREL_I = new BlockItem(MblvBlockInit.BAMBOO_BARREL, new Item.Properties());
-    public static final BlockItem CRIMSON_BARREL_I = new BlockItem(MblvBlockInit.CRIMSON_BARREL, new Item.Properties());
-    public static final BlockItem WARPED_BARREL_I = new BlockItem(MblvBlockInit.WARPED_BARREL, new Item.Properties());
+    public static final BlockItem OAK_BARREL_I = new BlockItem(MblvBlockInit.OAK_BARREL, setProperties(MblvBlockInit.OAK_BARREL));
+    public static final BlockItem BIRCH_BARREL_I = new BlockItem(MblvBlockInit.BIRCH_BARREL, setProperties(MblvBlockInit.BIRCH_BARREL));
+    public static final BlockItem JUNGLE_BARREL_I = new BlockItem(MblvBlockInit.JUNGLE_BARREL, setProperties(MblvBlockInit.JUNGLE_BARREL));
+    public static final BlockItem ACACIA_BARREL_I = new BlockItem(MblvBlockInit.ACACIA_BARREL, setProperties(MblvBlockInit.ACACIA_BARREL));
+    public static final BlockItem DARK_OAK_BARREL_I = new BlockItem(MblvBlockInit.DARK_OAK_BARREL, setProperties(MblvBlockInit.DARK_OAK_BARREL));
+    public static final BlockItem MANGROVE_BARREL_I = new BlockItem(MblvBlockInit.MANGROVE_BARREL, setProperties(MblvBlockInit.MANGROVE_BARREL));
+    public static final BlockItem CHERRY_BARREL_I = new BlockItem(MblvBlockInit.CHERRY_BARREL, setProperties(MblvBlockInit.CHERRY_BARREL));
+    public static final BlockItem BAMBOO_BARREL_I = new BlockItem(MblvBlockInit.BAMBOO_BARREL, setProperties(MblvBlockInit.BAMBOO_BARREL));
+    public static final BlockItem CRIMSON_BARREL_I = new BlockItem(MblvBlockInit.CRIMSON_BARREL, setProperties(MblvBlockInit.CRIMSON_BARREL));
+    public static final BlockItem WARPED_BARREL_I = new BlockItem(MblvBlockInit.WARPED_BARREL, setProperties(MblvBlockInit.WARPED_BARREL));
 
+    public static Item.Properties setProperties(MoreBarrelBlock moreBarrelBlock) {
+        return new Item.Properties().setId(ResourceKey.create(Registries.ITEM, MoreBarrelVariants.asId(moreBarrelBlock.barrelWoodType + "_barrel")));
+    }
 
     public static void registerItems() {
         registerItem(OAK_BARREL_I, Items.BARREL);

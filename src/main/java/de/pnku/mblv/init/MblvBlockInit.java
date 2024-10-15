@@ -3,6 +3,7 @@ package de.pnku.mblv.init;
 import de.pnku.mblv.MoreBarrelVariants;
 import de.pnku.mblv.block.MoreBarrelBlock;
 import de.pnku.mblv.block.entity.MoreBarrelBlockEntity;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -43,7 +44,11 @@ public class MblvBlockInit {
         registerBlock(CRIMSON_BARREL);
         registerBlock(WARPED_BARREL);
 
-        MORE_BARREL_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBarrelVariants.asId("more_barrel"), BlockEntityType.Builder.of(MoreBarrelBlockEntity::new, MblvBlockInit.more_barrels.toArray(Block[]::new)).build());
+        MORE_BARREL_BLOCK_ENTITY =
+                Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                        MoreBarrelVariants.asId("more_barrel"),
+                        FabricBlockEntityTypeBuilder.create(MoreBarrelBlockEntity::new, MblvBlockInit.more_barrels.toArray(Block[]::new))
+                                .build());
 
     }
 

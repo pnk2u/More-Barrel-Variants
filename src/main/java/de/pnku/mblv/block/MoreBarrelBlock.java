@@ -1,7 +1,10 @@
 package de.pnku.mblv.block;
 
+import de.pnku.mblv.MoreBarrelVariants;
 import de.pnku.mblv.block.entity.MoreBarrelBlockEntity;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.RandomSource;
@@ -23,29 +26,26 @@ public class MoreBarrelBlock extends BarrelBlock {
     public final String barrelWoodType;
 
     public MoreBarrelBlock(MapColor colour, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour));
+        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.asId(barrelWoodType + "_barrel"))));
         this.barrelWoodType = barrelWoodType;
     }
 
     public MoreBarrelBlock(MapColor colour, SoundType soundType, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).sound(soundType));
+        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.asId(barrelWoodType + "_barrel"))).sound(soundType));
         this.barrelWoodType = barrelWoodType;
     }
 
     @Override
     protected @NotNull InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (level.isClientSide) {
-            return InteractionResult.SUCCESS;
-        } else {
+        if (level instanceof ServerLevel serverLevel) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
             if (blockEntity instanceof MoreBarrelBlockEntity) {
-                player.openMenu((MoreBarrelBlockEntity)blockEntity);
+                player.openMenu((MoreBarrelBlockEntity) blockEntity);
                 player.awardStat(Stats.OPEN_BARREL);
-                PiglinAi.angerNearbyPiglins(player, true);
+                PiglinAi.angerNearbyPiglins(serverLevel, player, true);
             }
-
-            return InteractionResult.CONSUME;
         }
+            return InteractionResult.SUCCESS;
     }
 
     @Override

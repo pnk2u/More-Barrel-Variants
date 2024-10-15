@@ -7,12 +7,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_planks"
-    },
-    "-": {
-      "item": "minecraft:mangrove_slab"
-    }
+    "#": "minecraft:mangrove_planks",
+    "-": "minecraft:mangrove_slab"
   },
   "result": {
     "count": 1,
