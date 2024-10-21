@@ -21,6 +21,7 @@ public class MblvBlockInit {
     public static final MoreBarrelBlock JUNGLE_BARREL = new MoreBarrelBlock(MapColor.DIRT, "jungle");
     public static final MoreBarrelBlock ACACIA_BARREL = new MoreBarrelBlock(MapColor.COLOR_ORANGE, "acacia");
     public static final MoreBarrelBlock DARK_OAK_BARREL = new MoreBarrelBlock(MapColor.COLOR_BROWN, "dark_oak");
+    public static final MoreBarrelBlock PALE_OAK_BARREL = new MoreBarrelBlock(MapColor.QUARTZ, "pale_oak");
     public static final MoreBarrelBlock MANGROVE_BARREL = new MoreBarrelBlock(MapColor.COLOR_RED, "mangrove");
     public static final MoreBarrelBlock CHERRY_BARREL = new MoreBarrelBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry");
     public static final MoreBarrelBlock BAMBOO_BARREL = new MoreBarrelBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo");
@@ -38,6 +39,7 @@ public class MblvBlockInit {
         registerBlock(JUNGLE_BARREL);
         registerBlock(ACACIA_BARREL);
         registerBlock(DARK_OAK_BARREL);
+        registerBlock(PALE_OAK_BARREL);
         registerBlock(MANGROVE_BARREL);
         registerBlock(CHERRY_BARREL);
         registerBlock(BAMBOO_BARREL);

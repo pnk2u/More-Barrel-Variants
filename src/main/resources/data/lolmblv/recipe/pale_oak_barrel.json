@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "barrel",
+  "pattern": [
+    "#-#",
+    "# #",
+    "#-#"
+  ],
+  "key": {
+    "#": "minecraft:dark_oak_planks",
+    "-": "minecraft:dark_oak_slab"
+  },
+  "result": {
+    "count": 1,
+    "id": "lolmblv:dark_oak_barrel"
+  }
+}

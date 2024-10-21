@@ -20,6 +20,7 @@ public class MblvItemInit {
     public static final BlockItem JUNGLE_BARREL_I = itemFromBlock(JUNGLE_BARREL);
     public static final BlockItem ACACIA_BARREL_I = itemFromBlock(ACACIA_BARREL);
     public static final BlockItem DARK_OAK_BARREL_I = itemFromBlock(DARK_OAK_BARREL);
+    public static final BlockItem PALE_OAK_BARREL_I = itemFromBlock(PALE_OAK_BARREL);
     public static final BlockItem MANGROVE_BARREL_I = itemFromBlock(MANGROVE_BARREL);
     public static final BlockItem CHERRY_BARREL_I = itemFromBlock(CHERRY_BARREL);
     public static final BlockItem BAMBOO_BARREL_I = itemFromBlock(BAMBOO_BARREL);
