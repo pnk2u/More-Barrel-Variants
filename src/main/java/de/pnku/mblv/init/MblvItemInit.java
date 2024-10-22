@@ -42,7 +42,8 @@ public class MblvItemInit {
         registerItem(JUNGLE_BARREL_I, BIRCH_BARREL_I);
         registerItem(ACACIA_BARREL_I, JUNGLE_BARREL_I);
         registerItem(DARK_OAK_BARREL_I, ACACIA_BARREL_I);
-        registerItem(MANGROVE_BARREL_I, DARK_OAK_BARREL_I);
+        registerItem(PALE_OAK_BARREL_I, DARK_OAK_BARREL_I);
+        registerItem(MANGROVE_BARREL_I, PALE_OAK_BARREL_I);
         registerItem(CHERRY_BARREL_I, MANGROVE_BARREL_I);
         registerItem(BAMBOO_BARREL_I, CHERRY_BARREL_I);
         registerItem(CRIMSON_BARREL_I, BAMBOO_BARREL_I);
