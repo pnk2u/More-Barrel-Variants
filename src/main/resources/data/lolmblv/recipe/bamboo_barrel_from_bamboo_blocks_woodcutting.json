@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded" ,
+      "values": [
+        "nemos-woodcutter"
+      ]
+    }
+  ],
   "type": "nemos-woodcutter:woodcutting",
   "ingredient": "#minecraft:bamboo_blocks",
   "inputCount": 1,
