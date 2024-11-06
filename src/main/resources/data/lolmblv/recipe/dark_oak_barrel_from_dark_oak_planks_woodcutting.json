@@ -1,0 +1,9 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": "minecraft:dark_oak_planks",
+  "inputCount": 4,
+  "result": {
+    "count": 1,
+    "id": "lolmblv:dark_oak_barrel"
+  }
+}

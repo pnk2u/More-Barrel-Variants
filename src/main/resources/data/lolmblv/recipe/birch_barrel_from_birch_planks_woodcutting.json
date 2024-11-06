@@ -1,0 +1,9 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": "minecraft:birch_planks",
+  "inputCount": 4,
+  "result": {
+    "count": 1,
+    "id": "lolmblv:birch_barrel"
+  }
+}

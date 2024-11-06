@@ -1,0 +1,9 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": "minecraft:mangrove_planks",
+  "inputCount": 4,
+  "result": {
+    "count": 1,
+    "id": "lolmblv:mangrove_barrel"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "nemos-woodcutter:woodcutting",
+  "ingredient": "#minecraft:warped_stems",
+  "inputCount": 1,
+  "result": {
+    "count": 1,
+    "id": "lolmblv:warped_barrel"
+  }
+}
