@@ -3,11 +3,11 @@
     {
       "condition": "fabric:all_mods_loaded" ,
       "values": [
-        "nemos-woodcutter"
+        "nemos_woodcutter"
       ]
     }
   ],
-  "type": "nemos-woodcutter:woodcutting",
+  "type": "nemos_woodcutter:woodcutting",
   "ingredient": "#minecraft:dark_oak_logs",
   "inputCount": 1,
   "result": {
