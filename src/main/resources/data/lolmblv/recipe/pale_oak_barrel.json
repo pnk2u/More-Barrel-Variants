@@ -7,11 +7,11 @@
     "#-#"
   ],
   "key": {
-    "#": "minecraft:dark_oak_planks",
-    "-": "minecraft:dark_oak_slab"
+    "#": "minecraft:pale_oak_planks",
+    "-": "minecraft:pale_oak_slab"
   },
   "result": {
     "count": 1,
-    "id": "lolmblv:dark_oak_barrel"
+    "id": "lolmblv:pale_oak_barrel"
   }
 }
