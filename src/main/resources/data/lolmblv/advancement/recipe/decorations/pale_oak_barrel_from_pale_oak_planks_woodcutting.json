@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-     "has_planks": {
+    "has_dark_oak_planks": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:dark_oak_planks"
-            ]
+            "items": "minecraft:dark_oak_planks"
           }
         ]
       },
@@ -15,21 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:dark_oak_barrel"
+        "recipe": "minecraft:dark_oak_barrel_from_dark_oak_planks_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
-  [
-    "has_planks",
-      "has_the_recipe"
+    [
+      "has_the_recipe",
+      "has_dark_oak_planks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:dark_oak_barrel"
+      "minecraft:dark_oak_barrel_from_dark_oak_planks_woodcutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
