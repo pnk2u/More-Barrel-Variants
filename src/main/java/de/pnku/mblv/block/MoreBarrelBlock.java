@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
@@ -33,7 +34,7 @@ public class MoreBarrelBlock extends BarrelBlock {
     }
 
     @Override
-    protected @NotNull InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
+    public @NotNull InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (level.isClientSide) {
             return InteractionResult.SUCCESS;
         } else {
@@ -49,7 +50,7 @@ public class MoreBarrelBlock extends BarrelBlock {
     }
 
     @Override
-    protected void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         BlockEntity blockEntity = level.getBlockEntity(pos);
         if (blockEntity instanceof MoreBarrelBlockEntity) {
             ((MoreBarrelBlockEntity)blockEntity).recheckOpen();
