@@ -24,16 +24,22 @@ public class MblvItemInit {
     public static final BlockItem MANGROVE_BARREL_I = itemFromBlock(MANGROVE_BARREL);
     public static final BlockItem CHERRY_BARREL_I = itemFromBlock(CHERRY_BARREL);
     public static final BlockItem BAMBOO_BARREL_I = itemFromBlock(BAMBOO_BARREL);
-    public static final BlockItem CRIMSON_BARREL_I = itemFromBlock(CRIMSON_BARREL);
-    public static final BlockItem WARPED_BARREL_I = itemFromBlock(WARPED_BARREL);
+    public static final BlockItem CRIMSON_BARREL_I = itemFromBlock(CRIMSON_BARREL, true);
+    public static final BlockItem WARPED_BARREL_I = itemFromBlock(WARPED_BARREL, true);
 
     public static BlockItem itemFromBlock(MoreBarrelBlock moreBarrelBlock) {
-        return new BlockItem(moreBarrelBlock, setProperties(moreBarrelBlock));
+        return itemFromBlock(moreBarrelBlock, false);
     }
 
-    public static Item.Properties setProperties(MoreBarrelBlock moreBarrelBlock) {
-        return new Item.Properties()
+    public static BlockItem itemFromBlock(MoreBarrelBlock moreBarrelBlock, boolean isNether) {
+        return new BlockItem(moreBarrelBlock, setProperties(moreBarrelBlock, isNether));
+    }
+
+    public static Item.Properties setProperties(MoreBarrelBlock moreBarrelBlock, boolean isNether) {
+        Item.Properties properties = new Item.Properties()
                 .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBarrelBlock))).useBlockDescriptionPrefix();
+        if (isNether) properties.fireResistant();
+        return properties;
     }
 
     public static void registerItems() {
