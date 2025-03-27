@@ -27,7 +27,7 @@
 	"accessWidener": "lolmblv.accesswidener",
 	"depends": {
 		"fabricloader": ">=${loader_version}",
-		"minecraft": ">=1.21",
+		"minecraft": ">=${minecraft_version_0}",
 		"java": ">=21",
 		"fabric-api": ">=0.97.0"
 	},
