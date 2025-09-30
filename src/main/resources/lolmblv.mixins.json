@@ -3,6 +3,7 @@
   "package": "de.pnku.mblv.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BarrelBlockEntityMixin",
     "PoiTypesAccessor"
   ],
   "injectors": {

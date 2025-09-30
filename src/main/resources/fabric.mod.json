@@ -14,7 +14,7 @@
 		"issues": "https://github.com/pnk2u/More-Barrel-Variants/issues"
 	},
 	"license": "${mod_license}",
-	"icon": "logo.png",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -34,8 +34,15 @@
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.discord": "https://discord.com/invite/sA42pp6cuX"
+				"modmenu.discord": "https://discord.lieonlion.dev"
 			}
+		},
+		"mc-publish": {
+			"modrinth": "g4AhyGgi",
+			"curseforge": "1058391",
+			"dependencies": [
+				"fabric-api(required)#(ignore)"
+			]
 		}
 	}
 }

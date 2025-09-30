@@ -1,0 +1,53 @@
+### 1.7.11:
+- `1.21.6+`: Update to `1.21.6+`
+  > <sup>**Note**: Do not use 1.21.5 versions of this mod on 1.21.6+!  
+  Use this version (and all subsequent versions) instead!</sup>
+### 1.7.10:
+- `1.20.1`: Fix requiring incorrect Fabric API version
+### 1.7.9:
+- Make _**Warped**_ and _**Crimson** Barrel_ items fire resistant
+- Remove Barrel variants from Redstone Creative mode tab to declutter that menu
+- Add French translation (Thanks to [@Peperehobbits01](https://github.com/Peperehobbits01))
+### 1.7.8:
+- `1.21.5`: Update to 1.21.5
+### 1.7.7:
+- `1.21.4`: Fix _**Dark Oak** Barrel_ dropping as _**Pale Oak** Barrel_ when mined
+### 1.7.6:
+- `1.21.3`, `1.21.4`: Fix _**Pale Oak** Barrel_ bugs
+### 1.7.5:
+- `1.21.3`, `1.21.4`: Fix _**Pale Oak** Barrel_ recipe
+### 1.7.4:
+- Add Ukrainian Translation (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
+### 1.7.3:
+- `1.21.3⁺`: Update [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) compatibility recipes for newer versions of Nemo's Woodcutter `1.12.4+`
+- `1.21.4`: Update to 1.21.4
+- Add Simplified Chinese translation (Thanks to [@suoyukii](https://github.com/suoyukii))
+### 1.7.2:
+- `1.21.3⁺`: Add load condition for `1.7.1`'s [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) compatibility recipes
+### 1.7.1:
+- `1.21.3⁺`: Add Woodcutting recipes for compatibility with [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) (1.21.2+)
+## 1.7.0:
+- Small texture overhaul¹
+- `1.21.2`, `1.21.3`:
+  - Update to 1.21.2, 1.21.3
+  - Add Pale Oak Barrel¹
+
+<sup>1) Overhauled and new Pale Oak textures by [_hunnycakehorse_](https://modrinth.com/user/hunnycakehorse)</sup>
+## 1.6.0:
+- Add wood type specific container names (e.g. "Acacia Barrel" instead of just "Barrel")
+- `1.21(.1)`: Update to 1.21.1
+### 1.5.8:
+- `1.21`: Fix _Barrel_ variants not dropping themselves
+### 1.5.7:
+- Add pre-emptive compatibility for [Lootr](https://modrinth.com/mod/lootr) and Quad 1.3.0<sup>1</sup>'s structure block replacement feature  
+  <sup>1</sup>(currently in Beta)
+### 1.5.6:
+- Fix mod icon's image file type
+- Add Russian translation (Thanks to [@Alexander317](https://github.com/Alexander317))
+### 1.5.5:
+- Fix recipes not being unlocked properly
+- Replace modded _**Spruce** Barrel_ with vanilla _Barrel_ for better compatibility
+  #### NOTE:
+  > If you have - since installing this mod - crafted _**Spruce** Barrels_ specifically, they **_will get removed_**. Before installing this update, you can craft modded _**Spruce** Barrels_ back into vanilla _Barrels_ by simply putting them in a crafting grid.
+### 1.5.4:
+- `1.20.1`, `1.20.4`: Fix required Java version being 21 (now: 17)
