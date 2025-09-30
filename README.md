@@ -8,8 +8,6 @@
 - Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.9`
 - Mod Loader: _Fabric_
 - Requires: [`Fabric API`](https://modrinth.com/mod/fabric-api)
-- Added support for:
-    - [<img width='16' src="https://raw.githubusercontent.com/Plompi/VinURL/master/src/main/resources/assets/vinurl/icon.png"> `VinURL`](https://modrinth.com/mod/vinurl) (Added by VinURL's Author [Plompi](https://modrinth.com/user/Plompii) with [PR #1](/../../pull/1) and in [`1.0.2`](/../../#102))
 
 ### ᴬ⃯ ᵦ⃔ Translations
 
