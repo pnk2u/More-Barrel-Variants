@@ -1,0 +1,56 @@
+# <img width='24' src="./src/main/resources/icon.png"> More Barrel Variants
+> ![Mod Icon](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Barrel-Variants/pres/logo/logo_c.png)
+>
+> A simple mod adding wood variants for Minecraft's Barrel Blocks.
+
+### Compatibility
+
+- Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.9`
+- Mod Loader: _Fabric_
+- Requires: [`Fabric API`](https://modrinth.com/mod/fabric-api)
+- Added support for:
+    - [<img width='16' src="https://raw.githubusercontent.com/Plompi/VinURL/master/src/main/resources/assets/vinurl/icon.png"> `VinURL`](https://modrinth.com/mod/vinurl) (Added by VinURL's Author [Plompi](https://modrinth.com/user/Plompii) with [PR #1](/../../pull/1) and in [`1.0.2`](/../../#102))
+
+### ᴬ⃯ ᵦ⃔ Translations
+
+Currently available in:
+- English
+- German
+- Russian (by @[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.6`](/../../#156))
+- Simplified Chinese (by @[suoyukii](../../../../suoyukii) with [PR #3](../../pull/3), added in [`1.7.3`](/../../#170))
+- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #5](../../pull/4)/[6](/../../pull/6), added in [`1.7.4`](/../../#174))
+- French (by [Peperohobbits01](../../../../Peperohobbits01) with [PR #11](../../pull/11), added in [`1.7.9`](/../../#179))
+
+Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1)`)**.
+
+### Changelog History
+
+<!--CHANGELOG:START-->
+### 1.2.1:
+- `1.21.5(-9)`: Update to 1.21.9
+## 1.2.0:
+- Fix Tamed Parrots not being able to dance along with playing Jukebox variants
+- Add Polish Translation (Thanks to MateuszLegend2819)
+### 1.1.1:
+- Add Ukrainian translation (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
+## 1.1.0:
+- Complete texture palette overhaul, incorporating vanilla Planks colors much more and adding unique block borders to each wood type while still retaining the unique Jukebox/Noteblock look
+- `1.21.4⁺`: Add _**Pale Oak** Jukebox_ / _Noteblock_
+- `1.21.5`: Update to 1.21.5
+### 1.0.4:
+- `1.21⁺`: Implement [vinURL 1.2.0+](https://modrinth.com/mod/vinurl/version/1.2.2) API
+### 1.0.3:
+- Fix Jukeboxes dropping as Noteblocks when mined
+### 1.0.2:
+- Add compatibility with [VinURL](https://modrinth.com/mod/vinurl) (Thanks to [Plompii](https://modrinth.com/user/Plompii)!)
+- `1.21.2(3)`: Update to 1.21.2, 1.21.3
+- `1.21.4`: Update to 1.21.4
+<!--CHANGELOG:END-->
+
+> _`The section above is automatically updated with each new release and only includes already published releases.`_
+---
+#### Support/Contact
+- Suggestions? Questions? Bug reports?  
+  Feel free to [open an issue](https://github.com/pnk2u/More-Frame-Variants/issues)!  
+  &nbsp;  
+  You can also contact me via email at [contact@pnku.de](mailto:contact@pnku.de) or join the [Discord](https://dsc.lieonlion.dev) and contact me there.
