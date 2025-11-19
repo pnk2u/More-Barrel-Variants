@@ -4,7 +4,7 @@ import de.pnku.mblv.init.MblvBlockInit;
 import de.pnku.mblv.init.MblvItemInit;
 import de.pnku.mblv.poi.MblvPointOfInterestTypes;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class MoreBarrelVariants implements ModInitializer {
     public static final String MODID = "lolmblv";
@@ -16,7 +16,7 @@ public class MoreBarrelVariants implements ModInitializer {
         MblvPointOfInterestTypes.init();
     }
 
-    public static ResourceLocation asId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+    public static Identifier asId(String path) {
+        return Identifier.fromNamespaceAndPath(MODID, path);
     }
 }
