@@ -1,11 +1,11 @@
 # <img width='24' src="./src/main/resources/icon.png"> More Barrel Variants
 > ![Mod Icon](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Barrel-Variants/pres/logo/logo_c.png)
 >
-> A simple mod adding wood variants for Minecraft's Barrel Blocks.
+> A simple mod adding wood variants for Minecraft's Barrel Block.
 
 ### Compatibility
 
-- Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.9`
+- Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.10`
 - Mod Loader: _Fabric_
 - Requires: [`Fabric API`](https://modrinth.com/mod/fabric-api)
 
@@ -92,7 +92,8 @@ Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1
   #### NOTE:
   > If you have - since installing this mod - crafted _**Spruce** Barrels_ specifically, they **_will get removed_**. Before installing this update, you can craft modded _**Spruce** Barrels_ back into vanilla _Barrels_ by simply putting them in a crafting grid.
 ### 1.5.4:
-- `1.20.1`, `1.20.4`: Fix required Java version being 21 (now: 17)<!--CHANGELOG:END-->
+- `1.20.1`, `1.20.4`: Fix required Java version being 21 (now: 17)
+<!--CHANGELOG:END-->
 
 > _`The section above is automatically updated with each new release and only includes already published releases.`_
 ---
