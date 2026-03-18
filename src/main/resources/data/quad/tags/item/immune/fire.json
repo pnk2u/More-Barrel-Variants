@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "lolmblv:warped_barrel",
-    "lolmblv:crimson_barrel"
+    "more_barrel_variants:warped_barrel",
+    "more_barrel_variants:crimson_barrel"
   ]
 }

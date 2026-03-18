@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "lolmblv:block/dark_oak_barrel"
+    "model": "more_barrel_variants:block/dark_oak_barrel"
   }
 }

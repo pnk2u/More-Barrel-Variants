@@ -1,9 +1,9 @@
 {
     "parent": "minecraft:block/cube_bottom_top",
     "textures": {
-        "bottom": "lolmblv:block/warped_barrel_bottom",
-        "side": "lolmblv:block/warped_barrel_side",
-        "top": "lolmblv:block/warped_barrel_top",
+        "bottom": "more_barrel_variants:block/warped_barrel_bottom",
+        "side": "more_barrel_variants:block/warped_barrel_side",
+        "top": "more_barrel_variants:block/warped_barrel_top",
         "particle": "minecraft:block/warped_planks"
     }
 }

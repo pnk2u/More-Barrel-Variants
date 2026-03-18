@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:jungle_barrel"
+        "recipe": "more_barrel_variants:jungle_barrel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:jungle_barrel"
+      "more_barrel_variants:jungle_barrel"
     ]
   },
   "sends_telemetry_event": false

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "lolmblv:block/warped_barrel"
+    "model": "more_barrel_variants:block/warped_barrel"
   }
 }

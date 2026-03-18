@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:spruce_barrel"
+      "more_barrel_variants:spruce_barrel"
     ]
   },
   "sends_telemetry_event": false

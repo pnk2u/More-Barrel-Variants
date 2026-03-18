@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "lolmblv:block/cherry_barrel"
+    "model": "more_barrel_variants:block/cherry_barrel"
   }
 }

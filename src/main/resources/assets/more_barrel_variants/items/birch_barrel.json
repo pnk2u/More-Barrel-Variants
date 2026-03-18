@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "lolmblv:block/birch_barrel"
+    "model": "more_barrel_variants:block/birch_barrel"
   }
 }
