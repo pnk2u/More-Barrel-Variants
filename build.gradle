@@ -24,16 +24,18 @@ repositories {
 		url = 'https://maven.parchmentmc.org'
 	}
 	maven {
-		url "https://www.cursemaven.com"
-		content {
-			includeGroup "curse.maven"
-		}
+		name = 'Modrinth'
+		url = 'https://api.modrinth.com/maven'
+	}
+	maven {
+		name = 'SomethingSketchy' // EveryCompat, Moonlight
+		url = "https://registry.somethingcatchy.net/repository/maven-releases/"
 	}
 }
 
 
 loom {
-	accessWidenerPath = file("src/main/resources/lolmblv.accesswidener")
+	accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener")
 }
 
 def getReleaseVersion(minecraftVersion) {
@@ -118,6 +120,13 @@ dependencies {
 	}
 	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+
+	// Compatibility with Every Compat ("everycomp" modid, slug for own maven - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
+		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
+		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
+		// Testing
+		modRuntimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
+			modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
 }
 
 static def version_reduced(String input) { // Reduces a version string by one minor version and sets patch to 0
@@ -141,34 +150,65 @@ def minecraft_version_1() {
 	else {return "2.0.0"} // Effectively no upper bound
 }
 
+def getJavaVersionNum() { if (project.minecraft_version.startsWith("1.20")) {return 17} else return 21 }
+var java_version = getJavaVersionNum()
+def getJavaVersionEnum() { if (project.minecraft_version.startsWith("1.20")) {return JavaVersion.VERSION_17} else return JavaVersion.VERSION_21 }
+var java_version_enum = getJavaVersionEnum()
+
 processResources {
-	// Disregard Patch version from Fabric Loader for dependency
-	var fabric_loader_version_0 = "${fabric_loader_version}".replaceFirst(/\.[^.]*$/, '.0')
+	var fabric_loader_version_0 = version_reduced(fabric_loader_version)
 
 	var replaceProperties = [
-			loader_version: fabric_loader_version_0, mod_id: mod_id, mod_name: mod_name, mod_authors: mod_authors,
+			loader_version: fabric_loader_version_0, mod_id: mod_id, mod_name: mod_name,
 			mod_license: mod_license, mod_version: mod_version, mod_description: mod_description,
-			minecraft_version: minecraft_version, minecraft_version_0: minecraft_version_0(), minecraft_version_1: minecraft_version_1()
+			minecraft_version: minecraft_version, minecraft_version_0: minecraft_version_0(), minecraft_version_1: minecraft_version_1(),
+			java_version: java_version
 	]
 	inputs.properties replaceProperties
 
 	filesMatching("fabric.mod.json") {
 		expand replaceProperties
 	}
+	filesMatching("*.mixins.json") {
+		expand replaceProperties
+	}
+}
+
+tasks.register("validateModId") {
+	def modInitializerFile = file("src/main/java/${mod_group_id.replace('.', '/')}/${archives_base_name}.java")
+	doLast {
+		if (!modInitializerFile.exists()) {throw new GradleException("File not found: ${modInitializerFile}")}
+
+		def text = modInitializerFile.text
+		def matcher = text =~ /(?i)(MOD_ID|MODID)\s*=\s*"([^"]+)"/
+		if (!matcher.find()) {throw new GradleException("Could not find any Mod ID declaration in ${modInitializerFile}")}
+
+		def initializerModId = matcher.group(2); def configuredModId = "${mod_id}"
+
+		if (initializerModId != configuredModId) {throw new GradleException("Mod ID mismatch: Mod Initializer has '${initializerModId}', gradle.properties has '${configuredModId}'")}
+		if (!initializerModId.matches("[a-z0-9_-]+")) {throw new GradleException("Invalid Mod ID '${initializerModId}' in ${modInitializerFile}: must only contain lowercase letters, numbers, underscores, or hyphens (allowed in Fabric, avoid for NeoForge compatibility)")}
+		if (initializerModId.length() > 64) {throw new GradleException("Mod ID '${initializerModId}' in ${modInitializerFile} is too long: must be 64 characters or fewer.")}
+		if (initializerModId.contains("-")) {println("Warning: Mod ID '${initializerModId}' in ${modInitializerFile} contains hyphens, which are allowed in Fabric but not in NeoForge. Consider replacing with underscores for better compatibility.")}
+		println("Mod ID check passed: ${initializerModId}")
+	}
+}
+
+tasks.named("compileJava") {
+	dependsOn(tasks.named("validateModId"))
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = java_version
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = java_version_enum
+	targetCompatibility = java_version_enum
 }
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.base.archivesName.get()}"}
+		rename { "${project.base.archivesName.get()}_${it}"}
 	}
 }
 

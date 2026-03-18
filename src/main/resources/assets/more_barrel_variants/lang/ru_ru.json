@@ -18,5 +18,6 @@
   "container.more_barrel_variants.cherry_barrel": "Вишнёвая бочка",
   "container.more_barrel_variants.bamboo_barrel": "Бамбуковая бочка",
   "container.more_barrel_variants.crimson_barrel": "Багровая бочка",
-  "container.more_barrel_variants.warped_barrel": "Искажённая бочка"
+  "container.more_barrel_variants.warped_barrel": "Искажённая бочка",
+  "block_type.more_barrel_variants.barrel": "%s бочка"
 }

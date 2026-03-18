@@ -20,5 +20,6 @@
   "container.more_barrel_variants.cherry_barrel": "Kirschholzfass" ,
   "container.more_barrel_variants.bamboo_barrel": "Bambusfass" ,
   "container.more_barrel_variants.crimson_barrel": "Karmesinfass" ,
-  "container.more_barrel_variants.warped_barrel": "Wirrfass"
+  "container.more_barrel_variants.warped_barrel": "Wirrfass",
+  "block_type.more_barrel_variants.barrel": "%sfass"
 }

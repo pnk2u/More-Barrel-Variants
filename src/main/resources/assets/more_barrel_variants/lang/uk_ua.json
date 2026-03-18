@@ -21,5 +21,6 @@
   "container.more_barrel_variants.cherry_barrel": "Вишнева діжка",
   "container.more_barrel_variants.bamboo_barrel": "Бамбукова діжка",
   "container.more_barrel_variants.crimson_barrel": "Багряна діжка",
-  "container.more_barrel_variants.warped_barrel": "Химерна діжка"
+  "container.more_barrel_variants.warped_barrel": "Химерна діжка",
+  "block_type.more_barrel_variants.barrel": "%s діжка"
 }

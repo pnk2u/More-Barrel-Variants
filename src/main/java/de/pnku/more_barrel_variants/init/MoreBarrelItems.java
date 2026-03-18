@@ -6,26 +6,32 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.tags.TagKey;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
+import java.util.List;
+
+import static de.pnku.more_barrel_variants.MoreBarrelVariants.withModId;
 import static de.pnku.more_barrel_variants.init.MoreBarrelBlocks.*;
 
 public class MoreBarrelItems {
-    public static final BlockItem OAK_BARREL_I = itemFromBlock(OAK_BARREL);
-    public static final BlockItem BIRCH_BARREL_I = itemFromBlock(BIRCH_BARREL);
-    public static final BlockItem JUNGLE_BARREL_I = itemFromBlock(JUNGLE_BARREL);
-    public static final BlockItem ACACIA_BARREL_I = itemFromBlock(ACACIA_BARREL);
-    public static final BlockItem DARK_OAK_BARREL_I = itemFromBlock(DARK_OAK_BARREL);
-    public static final BlockItem PALE_OAK_BARREL_I = itemFromBlock(PALE_OAK_BARREL);
-    public static final BlockItem MANGROVE_BARREL_I = itemFromBlock(MANGROVE_BARREL);
-    public static final BlockItem CHERRY_BARREL_I = itemFromBlock(CHERRY_BARREL);
-    public static final BlockItem BAMBOO_BARREL_I = itemFromBlock(BAMBOO_BARREL);
-    public static final BlockItem CRIMSON_BARREL_I = itemFromBlock(CRIMSON_BARREL, true);
-    public static final BlockItem WARPED_BARREL_I = itemFromBlock(WARPED_BARREL, true);
+    public static final Item OAK_BARREL = itemFromBlock(MoreBarrelBlocks.OAK_BARREL);
+    public static final Item BIRCH_BARREL = itemFromBlock(MoreBarrelBlocks.BIRCH_BARREL);
+    public static final Item JUNGLE_BARREL = itemFromBlock(MoreBarrelBlocks.JUNGLE_BARREL);
+    public static final Item ACACIA_BARREL = itemFromBlock(MoreBarrelBlocks.ACACIA_BARREL);
+    public static final Item DARK_OAK_BARREL = itemFromBlock(MoreBarrelBlocks.DARK_OAK_BARREL);
+    public static final Item PALE_OAK_BARREL = itemFromBlock(MoreBarrelBlocks.PALE_OAK_BARREL);
+    public static final Item MANGROVE_BARREL = itemFromBlock(MoreBarrelBlocks.MANGROVE_BARREL);
+    public static final Item CHERRY_BARREL = itemFromBlock(MoreBarrelBlocks.CHERRY_BARREL);
+    public static final Item BAMBOO_BARREL = itemFromBlock(MoreBarrelBlocks.BAMBOO_BARREL);
+    public static final Item CRIMSON_BARREL = itemFromBlock(MoreBarrelBlocks.CRIMSON_BARREL, true);
+    public static final Item WARPED_BARREL = itemFromBlock(MoreBarrelBlocks.WARPED_BARREL, true);
+
+    public static final TagKey<Item> BARRELS_TAG = TagKey.create(Registries.ITEM, MoreBarrelVariants.withModId("barrels"));
 
     public static BlockItem itemFromBlock(MoreBarrelBlock moreBarrelBlock) {
         return itemFromBlock(moreBarrelBlock, false);
@@ -42,23 +48,29 @@ public class MoreBarrelItems {
         return properties;
     }
 
+    public static final List<Item> more_barrels = List.of(
+            OAK_BARREL,
+            BIRCH_BARREL,
+            JUNGLE_BARREL,
+            ACACIA_BARREL,
+            DARK_OAK_BARREL,
+            PALE_OAK_BARREL,
+            MANGROVE_BARREL,
+            CHERRY_BARREL,
+            BAMBOO_BARREL,
+            CRIMSON_BARREL,
+            WARPED_BARREL
+    );
+
     public static void registerItems() {
-        registerItem(OAK_BARREL_I, Items.BARREL);
-        registerItem(BIRCH_BARREL_I, OAK_BARREL_I);
-        registerItem(JUNGLE_BARREL_I, BIRCH_BARREL_I);
-        registerItem(ACACIA_BARREL_I, JUNGLE_BARREL_I);
-        registerItem(DARK_OAK_BARREL_I, ACACIA_BARREL_I);
-        registerItem(PALE_OAK_BARREL_I, DARK_OAK_BARREL_I);
-        registerItem(MANGROVE_BARREL_I, PALE_OAK_BARREL_I);
-        registerItem(CHERRY_BARREL_I, MANGROVE_BARREL_I);
-        registerItem(BAMBOO_BARREL_I, CHERRY_BARREL_I);
-        registerItem(CRIMSON_BARREL_I, BAMBOO_BARREL_I);
-        registerItem(WARPED_BARREL_I, CRIMSON_BARREL_I);
-    }
-
-    private static void registerItem(BlockItem barrel, Item barrelAfter) {
-        Registry.register(BuiltInRegistries.ITEM, MoreBarrelVariants.asId(((MoreBarrelBlock) barrel.getBlock()).barrelWoodType + "_barrel"), barrel);
-
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(barrelAfter, barrel));
+        for (int i = 0; i != more_barrels.size(); ++i) {
+            Item barrel = more_barrels.get(i);
+            Item previousBarrel = i == 0 ? Items.BARREL : more_barrels.get(i - 1);
+            String barrelName = ((MoreBarrelBlock) ((BlockItem) barrel).getBlock()).barrelWoodType + "_barrel";
+            Registry.register(BuiltInRegistries.ITEM, withModId(barrelName), barrel);
+            // mod_id change from lolmblv to more_barrel_variants - alias for backwards compatibility
+                BuiltInRegistries.ITEM.addAlias(withModId(barrelName, true), withModId(barrelName));
+            ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(previousBarrel, barrel));
+        }
     }
 }

@@ -18,5 +18,6 @@
   "container.more_barrel_variants.cherry_barrel": "Tonneau En Cerisier" ,
   "container.more_barrel_variants.bamboo_barrel": "Tonneau En Bambou" ,
   "container.more_barrel_variants.crimson_barrel": "Tonneau En Carmin" ,
-  "container.more_barrel_variants.warped_barrel": "Tonneau En Biscornnues"
+  "container.more_barrel_variants.warped_barrel": "Tonneau En Biscornnues",
+  "block_type.more_barrel_variants.barrel": "Tonneau En %s"
 }
