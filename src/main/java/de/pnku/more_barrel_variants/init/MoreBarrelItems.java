@@ -1,7 +1,7 @@
-package de.pnku.mblv.init;
+package de.pnku.more_barrel_variants.init;
 
-import de.pnku.mblv.MoreBarrelVariants;
-import de.pnku.mblv.block.MoreBarrelBlock;
+import de.pnku.more_barrel_variants.MoreBarrelVariants;
+import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -12,9 +12,9 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 
-import static de.pnku.mblv.init.MblvBlockInit.*;
+import static de.pnku.more_barrel_variants.init.MoreBarrelBlocks.*;
 
-public class MblvItemInit {
+public class MoreBarrelItems {
     public static final BlockItem OAK_BARREL_I = itemFromBlock(OAK_BARREL);
     public static final BlockItem BIRCH_BARREL_I = itemFromBlock(BIRCH_BARREL);
     public static final BlockItem JUNGLE_BARREL_I = itemFromBlock(JUNGLE_BARREL);

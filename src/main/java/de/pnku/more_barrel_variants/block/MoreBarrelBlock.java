@@ -1,6 +1,6 @@
-package de.pnku.mblv.block;
+package de.pnku.more_barrel_variants.block;
 
-import de.pnku.mblv.MoreBarrelVariants;
+import de.pnku.more_barrel_variants.MoreBarrelVariants;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.block.BarrelBlock;

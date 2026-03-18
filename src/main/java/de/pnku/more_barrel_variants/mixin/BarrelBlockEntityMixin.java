@@ -1,6 +1,6 @@
-package de.pnku.mblv.mixin;
+package de.pnku.more_barrel_variants.mixin;
 
-import de.pnku.mblv.block.MoreBarrelBlock;
+import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;

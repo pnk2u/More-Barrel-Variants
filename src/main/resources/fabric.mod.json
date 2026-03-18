@@ -18,7 +18,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"de.pnku.mblv.MoreBarrelVariants"
+			"de.pnku.more_barrel_variants.MoreBarrelVariants"
 		]
 	},
 	"mixins": [

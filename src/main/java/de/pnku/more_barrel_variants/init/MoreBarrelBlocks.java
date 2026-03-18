@@ -1,9 +1,8 @@
-package de.pnku.mblv.init;
+package de.pnku.more_barrel_variants.init;
 
-import de.pnku.mblv.MoreBarrelVariants;
-import de.pnku.mblv.block.MoreBarrelBlock;
+import de.pnku.more_barrel_variants.MoreBarrelVariants;
+import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -15,7 +14,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MblvBlockInit {
+public class MoreBarrelBlocks {
     public static final MoreBarrelBlock OAK_BARREL = new MoreBarrelBlock(MapColor.WOOD, "oak");
     public static final MoreBarrelBlock BIRCH_BARREL = new MoreBarrelBlock(MapColor.SAND, "birch");
     public static final MoreBarrelBlock JUNGLE_BARREL = new MoreBarrelBlock(MapColor.DIRT, "jungle");
