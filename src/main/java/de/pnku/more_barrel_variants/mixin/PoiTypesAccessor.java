@@ -1,4 +1,4 @@
-package de.pnku.mblv.mixin;
+package de.pnku.more_barrel_variants.mixin;
 
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.ai.village.poi.PoiType;

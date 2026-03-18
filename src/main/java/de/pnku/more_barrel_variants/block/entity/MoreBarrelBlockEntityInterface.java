@@ -1,4 +1,4 @@
-package de.pnku.mblv.block.entity;
+package de.pnku.more_barrel_variants.block.entity;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.state.BlockState;

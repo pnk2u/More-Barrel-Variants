@@ -1,8 +1,8 @@
-package de.pnku.mblv.init;
+package de.pnku.more_barrel_variants.init;
 
-import de.pnku.mblv.MoreBarrelVariants;
-import de.pnku.mblv.block.MoreBarrelBlock;
-import de.pnku.mblv.block.entity.MoreBarrelBlockEntity;
+import de.pnku.more_barrel_variants.MoreBarrelVariants;
+import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
+import de.pnku.more_barrel_variants.block.entity.MoreBarrelBlockEntity;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Block;
@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MblvBlockInit {
+public class MoreBarrelBlocks {
     public static final MoreBarrelBlock OAK_BARREL = new MoreBarrelBlock(MapColor.WOOD, "oak");
     public static final MoreBarrelBlock BIRCH_BARREL = new MoreBarrelBlock(MapColor.SAND, "birch");
     public static final MoreBarrelBlock JUNGLE_BARREL = new MoreBarrelBlock(MapColor.DIRT, "jungle");
@@ -43,7 +43,7 @@ public class MblvBlockInit {
         registerBlock(CRIMSON_BARREL);
         registerBlock(WARPED_BARREL);
 
-        MORE_BARREL_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBarrelVariants.asId("more_barrel"), BlockEntityType.Builder.of(MoreBarrelBlockEntity::new, MblvBlockInit.more_barrels.toArray(Block[]::new)).build(null));
+        MORE_BARREL_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBarrelVariants.asId("more_barrel"), BlockEntityType.Builder.of(MoreBarrelBlockEntity::new, MoreBarrelBlocks.more_barrels.toArray(Block[]::new)).build(null));
 
     }
 

@@ -1,6 +1,6 @@
-package de.pnku.mblv.block;
+package de.pnku.more_barrel_variants.block;
 
-import de.pnku.mblv.block.entity.MoreBarrelBlockEntity;
+import de.pnku.more_barrel_variants.block.entity.MoreBarrelBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
@@ -13,7 +13,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BarrelBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;

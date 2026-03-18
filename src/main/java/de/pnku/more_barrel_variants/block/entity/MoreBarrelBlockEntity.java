@@ -1,7 +1,7 @@
-package de.pnku.mblv.block.entity;
+package de.pnku.more_barrel_variants.block.entity;
 
-import de.pnku.mblv.block.MoreBarrelBlock;
-import de.pnku.mblv.init.MblvBlockInit;
+import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
+import de.pnku.more_barrel_variants.init.MoreBarrelBlocks;
 import net.minecraft.core.*;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -17,7 +17,6 @@ import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BarrelBlock;
-import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -28,7 +27,7 @@ public class MoreBarrelBlockEntity extends RandomizableContainerBlockEntity impl
     private final ContainerOpenersCounter openersCounter;
 
     public MoreBarrelBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(MblvBlockInit.MORE_BARREL_BLOCK_ENTITY, blockPos, blockState);
+        super(MoreBarrelBlocks.MORE_BARREL_BLOCK_ENTITY, blockPos, blockState);
         this.items = NonNullList.withSize(27, ItemStack.EMPTY);
         this.openersCounter = new ContainerOpenersCounter() {
             protected void onOpen(Level level, BlockPos pos, BlockState state) {

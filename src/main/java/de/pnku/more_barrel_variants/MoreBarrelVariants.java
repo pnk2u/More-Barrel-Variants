@@ -1,8 +1,8 @@
-package de.pnku.mblv;
+package de.pnku.more_barrel_variants;
 
-import de.pnku.mblv.init.MblvBlockInit;
-import de.pnku.mblv.init.MblvItemInit;
-import de.pnku.mblv.poi.MblvPointOfInterestTypes;
+import de.pnku.more_barrel_variants.init.MoreBarrelBlocks;
+import de.pnku.more_barrel_variants.init.MoreBarrelItems;
+import de.pnku.more_barrel_variants.poi.MoreBarrelPointOfInterestTypes;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.ResourceLocation;
 
@@ -11,9 +11,9 @@ public class MoreBarrelVariants implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        MblvBlockInit.registerBlocks();
-        MblvItemInit.registerItems();
-        MblvPointOfInterestTypes.init();
+        MoreBarrelBlocks.registerBlocks();
+        MoreBarrelItems.registerItems();
+        MoreBarrelPointOfInterestTypes.init();
     }
 
     public static ResourceLocation asId(String path) {
