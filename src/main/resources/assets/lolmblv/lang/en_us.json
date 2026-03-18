@@ -18,5 +18,6 @@
   "container.lolmblv.cherry_barrel": "Cherry Barrel" ,
   "container.lolmblv.bamboo_barrel": "Bamboo Barrel" ,
   "container.lolmblv.crimson_barrel": "Crimson Barrel" ,
-  "container.lolmblv.warped_barrel": "Warped Barrel"
+  "container.lolmblv.warped_barrel": "Warped Barrel",
+  "block_type.lolmblv.barrel": "%s Barrel"
 }

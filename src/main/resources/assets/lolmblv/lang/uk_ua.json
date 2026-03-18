@@ -19,5 +19,6 @@
   "container.lolmblv.cherry_barrel": "Вишнева діжка",
   "container.lolmblv.bamboo_barrel": "Бамбукова діжка",
   "container.lolmblv.crimson_barrel": "Багряна діжка",
-  "container.lolmblv.warped_barrel": "Химерна діжка"
+  "container.lolmblv.warped_barrel": "Химерна діжка",
+  "block_type.lolmblv.barrel": "%s діжка"
 }

@@ -22,6 +22,9 @@ import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
+import static de.pnku.more_barrel_variants.MoreBarrelVariants.MOD_ID;
+import static de.pnku.more_barrel_variants.init.MoreBarrelBlocks.more_barrels;
+
 public class MoreBarrelBlockEntity extends RandomizableContainerBlockEntity implements MoreBarrelBlockEntityInterface {
     private NonNullList<ItemStack> items;
     private final ContainerOpenersCounter openersCounter;
@@ -90,7 +93,12 @@ public class MoreBarrelBlockEntity extends RandomizableContainerBlockEntity impl
 
     @Override
     protected @NotNull Component getDefaultName() {
-        return Component.translatable("container.lolmblv." + getBlock().barrelWoodType + "_barrel");
+        MoreBarrelBlock moreBarrelBlock = (MoreBarrelBlock) getBlockState().getBlock();
+        if (more_barrels.contains(moreBarrelBlock)) {
+            return Component.translatable("container." + MOD_ID + "." + moreBarrelBlock.barrelWoodType + "_barrel");
+        } else {
+            return Component.translatable(moreBarrelBlock.getDescriptionId());
+        }
     }
 
     @Override

@@ -18,5 +18,6 @@
   "container.lolmblv.cherry_barrel": "樱花木木桶" ,
   "container.lolmblv.bamboo_barrel": " 竹木桶" ,
   "container.lolmblv.crimson_barrel": "绯红木木桶" ,
-  "container.lolmblv.warped_barrel": "诡异木木桶"
+  "container.lolmblv.warped_barrel": "诡异木木桶",
+  "block_type.lolmblv.barrel": "%s木桶"
 }

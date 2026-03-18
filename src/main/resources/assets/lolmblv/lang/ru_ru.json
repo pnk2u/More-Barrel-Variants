@@ -18,5 +18,6 @@
   "container.lolmblv.cherry_barrel": "Вишнёвая бочка",
   "container.lolmblv.bamboo_barrel": "Бамбуковая бочка",
   "container.lolmblv.crimson_barrel": "Багровая бочка",
-  "container.lolmblv.warped_barrel": "Искажённая бочка"
+  "container.lolmblv.warped_barrel": "Искажённая бочка",
+  "block_type.lolmblv.barrel": "%s бочка"
 }

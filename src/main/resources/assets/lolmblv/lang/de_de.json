@@ -18,5 +18,6 @@
   "container.lolmblv.cherry_barrel": "Kirschholzfass" ,
   "container.lolmblv.bamboo_barrel": "Bambusfass" ,
   "container.lolmblv.crimson_barrel": "Karmesinfass" ,
-  "container.lolmblv.warped_barrel": "Wirrfass"
+  "container.lolmblv.warped_barrel": "Wirrfass",
+  "block_type.lolmblv.barrel": "%sfass"
 }

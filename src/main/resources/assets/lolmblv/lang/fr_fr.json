@@ -18,5 +18,6 @@
   "container.lolmblv.cherry_barrel": "Tonneau En Cerisier" ,
   "container.lolmblv.bamboo_barrel": "Tonneau En Bambou" ,
   "container.lolmblv.crimson_barrel": "Tonneau En Carmin" ,
-  "container.lolmblv.warped_barrel": "Tonneau En Biscornnues"
+  "container.lolmblv.warped_barrel": "Tonneau En Biscornnues",
+  "block_type.lolmblv.barrel": "Tonneau En %s"
 }
