@@ -59,31 +59,28 @@
 ### Versions
 <a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-<a name="1.8.0"></a>
-### 1.8.0[*](#footnote-*):
-- `1.21.4(-9)`: Update to 1.21.9 and combining previous versions `1.21.4`, `1.21.5` and `1.21.6(-8)`
-> ### ⚠ BREAKING: DATA LOSS WARNING (`1.21` - `1.21.9`)
-> Items stored in Barrel variants from before `1.8.0` will be permanently **DELETED** when updating to `1.8.0⁺`.
->
-> #### **ACTION REQUIRED — BEFORE updating:**
-> 1. **Empty** all Barrel Variants barrels.
-> 2. **Update** to `1.8.0⁺`.
-> 3. **Place** your items **back** after updating.  
-> <sup> _**Note**: Barrels do **not** have to be mined and placed again._ </sup>
->
-> Reason:  
-> _Internal changes to ensure compatibility with newer Minecraft versions and allowing previously separate versions `1.21.4`, `1.21.5`, `1.21.6(-8)` and `1.21.9` to be combined into one._
->
-> Thank you for your understanding!
-- `1.20.1`: No breaking changes, the warning above does not apply to 1.20.1
+<a name="2.0.0"></a>
+## 2.0.0[*](#footnote-*):
+- `26.1`: Update to <ins>26.1</ins>
+- `1.20.1`, `1.21(.1)`: Add support for <ins>Every Compat</ins> (&#x200A;<sub><a title="Every Compat&#10;on Modrinth" href="https://modrinth.com/mod/every-compat/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:GH--><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Every Compat&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/every-compat/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;)
+- Internal Changes:
+    - `1.21(.1)+`: Update Mod ID from `lolmblv` to `more_barrel_variants` for clarity
+      > This does not affect existing saves negatively, as the mod will still recognize the old ID and migrate it to the new one seamlessly.  
+        While `1.20.1` retains the old ID due to the Fabric feature allowing for this kind of change only being available in `1.21(.1)+` versions,  
+        upgrading to `1.21(.1)+` will still trigger the ID migration, making sure that you will continue to be able to update existing worlds safely to a newer Minecraft version.
+    - Update main _Block_ and _Item Tag_ for consistency:  
+      Now both Blocks and Items use `#more_barrel_variants:barrels` (`1.21(.1)+`) / `#lolmblv:barrels` (`1.20.1`)
 
-<h2><sub><sub><sup><ins>Download 1.8.0 + 1.21(.1)</ins>:</sup>&#x200A;
-<a title="Download (Modrinth):&#10;More Barrel Variants 1.8.0 + 1.21(.1)" href="https://modrinth.com/mod/more-barrel-variants/version/Sww0GZv2">
-<img width=26 src="https://img.shields.io/badge/-%20-%230f91?style=flat&logo=modrinth"></a>
-<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-<a title="Download (Curseforge):&#10;More Barrel Variants 1.8.0 + 1.21(.1)" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/1058391">
-<img width=26 src="https://img.shields.io/badge/--%23f062?style=flat&logo=curseforge"></a>
-</sub></sub></h2>
+<br></br>
+<sub>License update to [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (previously [MIT](https://opensource.org/licenses/MIT))</sub>
+
+  <h2><sub><sub><sup><ins>Download 2.0.0 + 1.20.1</ins>:</sup>&#x200A;
+  <a title="Download (Modrinth):&#10;More Barrel Variants 2.0.0 + 1.20.1" href="https://www.modrinth.com/mod/g4AhyGgi/version/IHDSIeC5">
+  <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+  <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+  <a title="Download (Curseforge):&#10;2.0.0 + 1.20.1 - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7782083">
+  <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+  </sub></sub></h2>
 
 <!--CHANGELOG:END-->
 <a name="footnote-*"></a>
