@@ -19,5 +19,7 @@
   "container.lolmblv.bamboo_barrel": "Bambusfass" ,
   "container.lolmblv.crimson_barrel": "Karmesinfass" ,
   "container.lolmblv.warped_barrel": "Wirrfass",
-  "block_type.lolmblv.barrel": "%sfass"
+  "block_type.lolmblv.barrel": "%sfass",
+  "tag.item.more_barrel_variants.barrels": "Fassvarianten",
+  "tag.item.lieonstudios.barrels": "Fassvarianten"
 }
