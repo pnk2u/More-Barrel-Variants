@@ -12,12 +12,12 @@ public class MoreBarrelBlock extends BarrelBlock {
     public final String barrelWoodType;
 
     public MoreBarrelBlock(MapColor colour, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.asId(barrelWoodType + "_barrel"))));
+        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.withModId(barrelWoodType + "_barrel"))));
         this.barrelWoodType = barrelWoodType;
     }
 
     public MoreBarrelBlock(MapColor colour, SoundType soundType, String barrelWoodType) {
-        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.asId(barrelWoodType + "_barrel"))).sound(soundType));
+        super(Properties.ofFullCopy(Blocks.BARREL).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBarrelVariants.withModId(barrelWoodType + "_barrel"))).sound(soundType));
         this.barrelWoodType = barrelWoodType;
     }
 

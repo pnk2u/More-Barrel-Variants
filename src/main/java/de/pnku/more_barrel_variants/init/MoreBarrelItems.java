@@ -12,6 +12,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 
 import java.util.List;
 
@@ -33,17 +34,17 @@ public class MoreBarrelItems {
 
     public static final TagKey<Item> BARRELS_TAG = TagKey.create(Registries.ITEM, MoreBarrelVariants.withModId("barrels"));
 
-    public static BlockItem itemFromBlock(MoreBarrelBlock moreBarrelBlock) {
-        return itemFromBlock(moreBarrelBlock, false);
+    public static BlockItem itemFromBlock(Block block) {
+        return itemFromBlock(block, false);
     }
 
-    public static BlockItem itemFromBlock(MoreBarrelBlock moreBarrelBlock, boolean isNether) {
-        return new BlockItem(moreBarrelBlock, setProperties(moreBarrelBlock, isNether));
+    public static BlockItem itemFromBlock(Block block, boolean isNether) {
+        return new BlockItem(block, setProperties(block, isNether));
     }
 
-    public static Item.Properties setProperties(MoreBarrelBlock moreBarrelBlock, boolean isNether) {
+    public static Item.Properties setProperties(Block block, boolean isNether) {
         Item.Properties properties = new Item.Properties()
-                .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBarrelBlock))).useBlockDescriptionPrefix();
+                .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(block))).useBlockDescriptionPrefix();
         if (isNether) properties.fireResistant();
         return properties;
     }
