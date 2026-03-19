@@ -1,30 +1,66 @@
-# <img width='24' src="./src/main/resources/icon.png"> More Barrel Variants
-> ![Mod Icon](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Barrel-Variants/pres/logo/logo_c.png)
->
-> A simple mod adding wood variants for Minecraft's Barrel Block.
+<a name="more-barrel-variants"></a>
+# <img height='48' align=right src="./src/main/resources/icon.png"> <p align="center">&emsp;&emsp;&emsp; More Barrel Variants <sub><a title="More Barrel Variants on Modrinth" href="https://www.modrinth.com/mod/more-barrel-variants"><img width="40" src="https://img.shields.io/badge/-%20-%230f91?style=flat&logo=modrinth"></a></sub> <a title="More Barrel Variants on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants"><sub><img width="40" src="https://img.shields.io/badge/--%23f062?style=flat&logo=curseforge"></sub></a> </p>
+> <img align=left height="153" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Barrel-Variants/pres/logo/logo_c.png">  
+>  A mod adding wood variants for Minecraft's Barrel Block. <br><br><br><br>  
+>  <details><summary><h5>Show in-game example image</h5></summary><br><img src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Barrel-Variants/pres/gh_readme_banner.png"><sup><br><!--CAPTION:PLACEHOLDER--></sup></details>  
+<br>  
 
-### Compatibility
+<a name="compatibility"></a>
+### <img height="24" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/puzzle.svg"> Compatibility
 
-- Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.10`
-- Mod Loader: _Fabric_
-- Requires: [`Fabric API`](https://modrinth.com/mod/fabric-api)
+<table>
+  <thead>
+    <tr>
+      <td><strong>Minecraft</strong></td>
+      <td>
+        <a href="https://modrinth.com/mod/more-barrel-variants/versions?g=1.20.1"><code>1.20.1</code></a><br>
+        <a href="https://modrinth.com/mod/more-barrel-variants/versions?g=1.21&g=1.21.1"><code>1.21(.1)</code></a>, <a href="https://modrinth.com/mod/more-barrel-variants/versions?g=1.21.4&g=1.21.5&g=1.21.6&g=1.21.7&g=1.21.8&g=1.21.9&g=1.21.10?g=1.21.11"><code>1.21.4</code>~<code>1.21.11</code></a>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mod Loaders</strong></td>
+      <td><sub><img width="16" src="https://raw.githubusercontent.com/FabricMC/fabric/1.21.10/src/main/resources/assets/fabric/icon.png"></sub><a href="https://fabricmc.net/use/installer/"><code>Fabric Loader</code></a></td>
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <td><strong>Requires</strong></td>
+      <td>
+        <a href="https://modrinth.com/mod/fabric-api"><sub><img width="16" src="https://raw.githubusercontent.com/FabricMC/fabric/1.21.10/src/main/resources/assets/fabric/icon.png"></sub><code>Fabric API</code></a>
+      </td>
+    </tr>
+  </thead>
+</table>
+<br>
 
-### ᴬ⃯ ᵦ⃔ Translations
+<a name="translations"></a>
+### <img height="24" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/translate.svg"> Translations
 
-Currently available in:
-- English
-- German
-- Russian (by @[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.6`](/../../#156))
-- Simplified Chinese (by @[suoyukii](../../../../suoyukii) with [PR #3](../../pull/3), added in [`1.7.3`](/../../#170))
-- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #5](../../pull/4)/[6](/../../pull/6), added in [`1.7.4`](/../../#174))
-- French (by [Peperohobbits01](../../../../Peperohobbits01) with [PR #11](../../pull/11), added in [`1.7.9`](/../../#179))
+|Language|Translator|
+|--|--|
+|English||
+|German||
+|Russian|@[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.6`](/../../#156)|
+|Chinese (zh_cn)|@[suoyukii](../../../../suoyukii) with [PR #3](../../pull/3), added in [`1.7.3`](/../../#170)|
+|Ukrainian|@[StarmanMine142](/../../../../StarmanMine142) with [PR #5](../../pull/4)/[6](/../../pull/6), added in [`1.7.4`](/../../#174)|
+|French|@[Peperohobbits01](../../../../Peperohobbits01) with [PR #11](../../pull/11), added in [`1.7.9`](/../../#179)|
 
-Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1)`)**.
+> [!NOTE]
+> > Want to help translate? If you can, please open a PR to the **default branch** [`1.21(.1)`](../../tree/1.21(.1)).  
+> > Otherwise, simply send your translation via email (contact@pnku.de) or join the [Discord](https://discord.lieonlion.dev).
 
-### Changelog History
+<br>
 
+
+<img height="53" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/changelog.svg">  
+
+### Versions
+<a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-## 1.8.0:
+<a name="1.8.0"></a>
+### 1.8.0[*](#footnote-*):
 - `1.21.4(-9)`: Update to 1.21.9 and combining previous versions `1.21.4`, `1.21.5` and `1.21.6(-8)`
 > ### ⚠ BREAKING: DATA LOSS WARNING (`1.21` - `1.21.9`)
 > Items stored in Barrel variants from before `1.8.0` will be permanently **DELETED** when updating to `1.8.0⁺`.
@@ -40,65 +76,28 @@ Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1
 >
 > Thank you for your understanding!
 - `1.20.1`: No breaking changes, the warning above does not apply to 1.20.1
-### 1.7.11:
-- `1.21.6+`: Update to `1.21.6+`
-  > <sup>**Note**: Do not use 1.21.5 versions of this mod on 1.21.6+!  
-  Use this version (and all subsequent versions) instead!</sup>
-### 1.7.10:
-- `1.20.1`: Fix requiring incorrect Fabric API version
-### 1.7.9:
-- Make _**Warped**_ and _**Crimson** Barrel_ items fire resistant
-- Remove Barrel variants from Redstone Creative mode tab to declutter that menu
-- Add French translation (Thanks to [@Peperehobbits01](https://github.com/Peperehobbits01))
-### 1.7.8:
-- `1.21.5`: Update to 1.21.5
-### 1.7.7:
-- `1.21.4`: Fix _**Dark Oak** Barrel_ dropping as _**Pale Oak** Barrel_ when mined
-### 1.7.6:
-- `1.21.3`, `1.21.4`: Fix _**Pale Oak** Barrel_ bugs
-### 1.7.5:
-- `1.21.3`, `1.21.4`: Fix _**Pale Oak** Barrel_ recipe
-### 1.7.4:
-- Add Ukrainian Translation (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
-### 1.7.3:
-- `1.21.3⁺`: Update [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) compatibility recipes for newer versions of Nemo's Woodcutter `1.12.4+`
-- `1.21.4`: Update to 1.21.4
-- Add Simplified Chinese translation (Thanks to [@suoyukii](https://github.com/suoyukii))
-### 1.7.2:
-- `1.21.3⁺`: Add load condition for `1.7.1`'s [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) compatibility recipes
-### 1.7.1:
-- `1.21.3⁺`: Add Woodcutting recipes for compatibility with [Nemo's Woodcutter](https://modrinth.com/mod/nemos-woodcutter) (1.21.2+)
-## 1.7.0:
-- Small texture overhaul¹
-- `1.21.2`, `1.21.3`:
-  - Update to 1.21.2, 1.21.3
-  - Add Pale Oak Barrel¹
 
-<sup>1) Overhauled and new Pale Oak textures by [_hunnycakehorse_](https://modrinth.com/user/hunnycakehorse)</sup>
-## 1.6.0:
-- Add wood type specific container names (e.g. "Acacia Barrel" instead of just "Barrel")
-- `1.21(.1)`: Update to 1.21.1
-### 1.5.8:
-- `1.21`: Fix _Barrel_ variants not dropping themselves
-### 1.5.7:
-- Add pre-emptive compatibility for [Lootr](https://modrinth.com/mod/lootr) and Quad 1.3.0<sup>1</sup>'s structure block replacement feature  
-  <sup>1</sup>(currently in Beta)
-### 1.5.6:
-- Fix mod icon's image file type
-- Add Russian translation (Thanks to [@Alexander317](https://github.com/Alexander317))
-### 1.5.5:
-- Fix recipes not being unlocked properly
-- Replace modded _**Spruce** Barrel_ with vanilla _Barrel_ for better compatibility
-  #### NOTE:
-  > If you have - since installing this mod - crafted _**Spruce** Barrels_ specifically, they **_will get removed_**. Before installing this update, you can craft modded _**Spruce** Barrels_ back into vanilla _Barrels_ by simply putting them in a crafting grid.
-### 1.5.4:
-- `1.20.1`, `1.20.4`: Fix required Java version being 21 (now: 17)
+<h2><sub><sub><sup><ins>Download 1.8.0 + 1.21(.1)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 1.8.0 + 1.21(.1)" href="https://modrinth.com/mod/more-barrel-variants/version/Sww0GZv2">
+<img width=26 src="https://img.shields.io/badge/-%20-%230f91?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;More Barrel Variants 1.8.0 + 1.21(.1)" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/1058391">
+<img width=26 src="https://img.shields.io/badge/--%23f062?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <!--CHANGELOG:END-->
+<a name="footnote-*"></a>
+> <strong>*</strong><sup>: Most recent version</sup>  
+> _`The version above is automatically updated with the newest release and only after it has been successfully published.`_
 
-> _`The section above is automatically updated with each new release and only includes already published releases.`_
+<a name="changelog-history"></a>
+> [!TIP]
+> > Looking for changes of previous versions?  
+> > You can find them in the [changelog history](./CHANGELOG_history.md).
+
 ---
 #### Support/Contact
 - Suggestions? Questions? Bug reports?  
-  Feel free to [open an issue](https://github.com/pnk2u/More-Frame-Variants/issues)!  
+  Feel free to [open an issue](/../../issues)!  
   &nbsp;  
   You can also contact me via email at [contact@pnku.de](mailto:contact@pnku.de) or join the [Discord](https://dsc.lieonlion.dev) and contact me there.
