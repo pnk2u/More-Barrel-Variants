@@ -21,5 +21,7 @@
   "container.more_barrel_variants.bamboo_barrel": "Bamboo Barrel" ,
   "container.more_barrel_variants.crimson_barrel": "Crimson Barrel" ,
   "container.more_barrel_variants.warped_barrel": "Warped Barrel",
-  "block_type.more_barrel_variants.barrel": "%s Barrel"
+  "block_type.more_barrel_variants.barrel": "%s Barrel",
+  "tag.item.more_barrel_variants.barrels": "Barrel Variants",
+  "tag.item.lieonstudios.barrels": "Barrel Variants"
 }
