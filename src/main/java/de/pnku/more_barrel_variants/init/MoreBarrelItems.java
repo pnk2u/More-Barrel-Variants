@@ -2,7 +2,7 @@ package de.pnku.more_barrel_variants.init;
 
 import de.pnku.more_barrel_variants.MoreBarrelVariants;
 import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -71,7 +71,7 @@ public class MoreBarrelItems {
             Registry.register(BuiltInRegistries.ITEM, withModId(barrelName), barrel);
             // mod_id change from lolmblv to more_barrel_variants - alias for backwards compatibility
                 BuiltInRegistries.ITEM.addAlias(withModId(barrelName, true), withModId(barrelName));
-            ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(previousBarrel, barrel));
+            CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.insertAfter(previousBarrel, barrel));
         }
     }
 }

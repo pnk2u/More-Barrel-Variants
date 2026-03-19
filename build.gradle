@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' // version from latest-loom.gradle via settings.gradle's pluginManagement
+	id 'net.fabricmc.fabric-loom' // version from latest-loom.gradle via settings.gradle's pluginManagement
 	id 'maven-publish'
 }
 
@@ -42,19 +42,15 @@ loom {
 dependencies {
 	implementation 'org.apache.commons:commons-text:1.12.0'
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings loom.layered() {
-		officialMojangMappings()
-		parchment("org.parchmentmc.data:parchment-${pMinecraftVersion}:${mostRecentParchmentDate}@zip")
-	}
-	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+	implementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 
 	// Compatibility with Every Compat ("everycomp" modid, slug for own maven - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
-		//modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
-		//modRuntimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
+		//runtimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
+		//runtimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
 		// Testing
-		//modRuntimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
-			//modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
+		//runtimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
+			//runtimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
 }
 
 

@@ -51,7 +51,7 @@ public class MoreBarrelBlocks {
             Registry.register(BuiltInRegistries.BLOCK, withModId(barrelName), barrel);
             // mod_id change from lolmblv to more_barrel_variants - alias for backwards compatibility
                 BuiltInRegistries.BLOCK.addAlias(withModId(barrelName, true), withModId(barrelName));
-            BlockEntityType.BARREL.addSupportedBlock(barrel);
+            BlockEntityType.BARREL.addValidBlock(barrel);
         }
     }
 }
