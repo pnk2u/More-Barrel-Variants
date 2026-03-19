@@ -1,3 +1,4 @@
+/* Disabled as Every Compat is not available for versions above 1.21.1
 package de.pnku.more_barrel_variants.compat.ec;
 
 import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
@@ -73,3 +74,4 @@ public class MoreBarrelEveryCompat {
     }
 }
 
+*/

@@ -122,11 +122,11 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 
 	// Compatibility with Every Compat ("everycomp" modid, slug for own maven - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
-		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
-		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
+		//modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
+		//modRuntimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
 		// Testing
-		modRuntimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
-			modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
+		//modRuntimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
+			//modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
 }
 
 static def version_reduced(String input) { // Reduces a version string by one minor version and sets patch to 0

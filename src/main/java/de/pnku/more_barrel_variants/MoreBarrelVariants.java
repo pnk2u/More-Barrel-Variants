@@ -1,12 +1,12 @@
 package de.pnku.more_barrel_variants;
 
-import de.pnku.more_barrel_variants.compat.ec.MoreBarrelEveryCompat;
+// import de.pnku.more_barrel_variants.compat.ec.MoreBarrelEveryCompat;
+// import net.fabricmc.loader.api.FabricLoader;
 import de.pnku.more_barrel_variants.init.MoreBarrelBlocks;
 import de.pnku.more_barrel_variants.init.MoreBarrelItems;
 import de.pnku.more_barrel_variants.poi.MoreBarrelPointOfInterestTypes;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.resources.Identifier;
-import net.fabricmc.loader.api.FabricLoader;
 
 public class MoreBarrelVariants implements ModInitializer {
     public static final String MOD_ID = "more_barrel_variants";
@@ -17,7 +17,7 @@ public class MoreBarrelVariants implements ModInitializer {
         MoreBarrelBlocks.registerBlocks();
         MoreBarrelItems.registerItems();
         MoreBarrelPointOfInterestTypes.init();
-        initECModule();
+        // initECModule();
     }
 
     public static Identifier withModId(String path) {return withModId(path, false);}
@@ -26,9 +26,9 @@ public class MoreBarrelVariants implements ModInitializer {
         return Identifier.fromNamespaceAndPath(legacy ? LEGACY_MOD_ID : MOD_ID, path);
     }
 
-    private void initECModule() {
+    /*private void initECModule() {
         if (FabricLoader.getInstance().isModLoaded("everycomp")) {
             MoreBarrelEveryCompat.init();
         }
-    }
+    }*/
 }
