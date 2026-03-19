@@ -99,9 +99,9 @@ def minecraft_version_1() {
 	String key = 'minecraft_version_upper'
 	if (project.hasProperty(key)) {
 		String value = project.getProperties().get(key)
-		return !value.isEmpty() ? value : "2.0.0"
+		return !value.isEmpty() ? value : "99.0.0"
 	} else {
-		return "2.0.0" // Effectively no upper bound
+		return "99.0.0" // Effectively no upper bound
 	}
 }
 
