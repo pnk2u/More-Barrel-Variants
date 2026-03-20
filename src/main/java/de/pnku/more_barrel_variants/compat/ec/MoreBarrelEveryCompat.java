@@ -64,8 +64,8 @@ public class MoreBarrelEveryCompat {
         }
 
         @Override
-        public void onModInit() {
-            super.onModInit();
+        public void onModSetup() {
+            super.onModSetup();
             RegHelper.addBlocksToPOI(PoiTypes.FISHERMAN, barrelSet.blocks.values());
         }
     }
