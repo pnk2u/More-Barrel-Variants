@@ -9,6 +9,7 @@
   "block.more_barrel_variants.bamboo_barrel": "竹の樽" ,
   "block.more_barrel_variants.crimson_barrel": "真紅の樽" ,
   "block.more_barrel_variants.warped_barrel": "歪んだ樽" ,
+  "block.more_barrel_variants.pale_oak_barrel": "ペールオークの樽" ,
   "container.more_barrel_variants.oak_barrel": "オークの樽" ,
   "container.more_barrel_variants.birch_barrel": "シラカバの樽" ,
   "container.more_barrel_variants.jungle_barrel": "ジャングルの樽" ,
@@ -19,6 +20,7 @@
   "container.more_barrel_variants.bamboo_barrel": "竹の樽" ,
   "container.more_barrel_variants.crimson_barrel": "真紅の樽" ,
   "container.more_barrel_variants.warped_barrel": "歪んだ樽",
+  "container.more_barrel_variants.pale_oak_barrel": "ペールオークの樽" ,
   "block_type.more_barrel_variants.barrel": "%sの樽",
   "tag.item.more_barrel_variants.barrels": "樽のバリエーション",
   "tag.item.lieonstudios.barrels": "樽のバリエーション"
