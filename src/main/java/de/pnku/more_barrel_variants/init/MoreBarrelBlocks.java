@@ -16,7 +16,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.ArrayList;
 import java.util.List;
 
-import static de.pnku.more_barrel_variants.MoreBarrelVariants.*;
+import static de.pnku.more_barrel_variants.MoreBarrelVariants.withModId;
 
 public class MoreBarrelBlocks {
     public static final Block OAK_BARREL = new MoreBarrelBlock(MapColor.WOOD, "oak");
