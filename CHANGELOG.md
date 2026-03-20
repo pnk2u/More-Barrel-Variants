@@ -1,4 +1,4 @@
-<!--publish=false-->
+<!--publish=true-->
 ### 2.0.1:
 - Add Japanese translation (Thanks to [@HayaKoh-WeldyAlin](https://www.github.com/HayaKoh-WeldyAlin))
 - `1.20.1`: Fix Barrels from <ins>Every Compat</ins> (&#x200A;<sub><a title="Every Compat&#10;on Modrinth" href="https://modrinth.com/mod/every-compat/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Every Compat&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/every-compat/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) not being usable by _Villagers_ to become _Fishermen_
