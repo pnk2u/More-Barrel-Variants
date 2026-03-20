@@ -20,6 +20,6 @@
   "container.lolmblv.crimson_barrel": "Crimson Barrel" ,
   "container.lolmblv.warped_barrel": "Warped Barrel",
   "block_type.lolmblv.barrel": "%s Barrel",
-  "tag.item.more_barrel_variants.barrels": "Barrel Variants",
+  "tag.item.lolmblv.barrels": "Barrel Variants",
   "tag.item.lieonstudios.barrels": "Barrel Variants"
 }
