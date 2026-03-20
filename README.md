@@ -42,10 +42,11 @@
 |--|--|
 |English||
 |German||
-|Russian|@[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.6`](/../../#156)|
-|Chinese (zh_cn)|@[suoyukii](../../../../suoyukii) with [PR #3](../../pull/3), added in [`1.7.3`](/../../#170)|
-|Ukrainian|@[StarmanMine142](/../../../../StarmanMine142) with [PR #5](../../pull/4)/[6](/../../pull/6), added in [`1.7.4`](/../../#174)|
-|French|@[Peperohobbits01](../../../../Peperohobbits01) with [PR #11](../../pull/11), added in [`1.7.9`](/../../#179)|
+|Russian|@[Alexander317](/../../../../Alexander317) with [PR #1](../../pull/1), added in [`1.5.6`](/../../CHANGELOG_history.md/#1.5.6)|
+|Chinese (zh_cn)|@[suoyukii](../../../../suoyukii) with [PR #3](../../pull/3), added in [`1.7.3`](/../../CHANGELOG_history.md#1.7.3)|
+|Ukrainian|@[StarmanMine142](/../../../../StarmanMine142) with [PR #5](../../pull/4)/[6](/../../pull/6), added in [`1.7.4`](/../../CHANGELOG_history.md#1.7.4)|
+|French|@[Peperohobbits01](../../../../Peperohobbits01) with [PR #11](../../pull/11), added in [`1.7.9`](/../../CHANGELOG_history.md#1.7.9)|
+|Japanese|@[HayaKoh-WeldyAlin](/../../../../HayaKoh-WeldyAlin) with [PR #14](../../pull/14), added in [`2.0.1`](/../../CHANGELOG_history.md/#2.0.1)|
 
 > [!NOTE]
 > > Want to help translate? If you can, please open a PR to the **default branch** [`1.21(.1)`](../../tree/1.21(.1)).  
