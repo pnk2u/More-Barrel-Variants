@@ -58,7 +58,7 @@ public class MoreBarrelEveryCompat {
         }
         @Override
         public boolean isEntryAlreadyRegistered(String entrySetId, ResourceLocation blockId, BlockType blockType, Registry<?> registry) {
-            // Preventing Pale Oak Barrels already added by "More Variants: Pale Oak Barrel"
+            // Preventing Pale Oak Barrels already added by "More Variants: Pale Oak Backport"
             if (blockId.getPath().endsWith("pale_oak_barrel")) return true;
             else return super.isEntryAlreadyRegistered(entrySetId, blockId, blockType, registry);
         }
