@@ -4,13 +4,13 @@ package de.pnku.more_barrel_variants.compat.ec;
 import de.pnku.more_barrel_variants.block.MoreBarrelBlock;
 import de.pnku.more_barrel_variants.init.MoreBarrelBlocks;
 import de.pnku.more_barrel_variants.init.MoreBarrelItems;
+import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.mehvahdjukaar.every_compat.api.SimpleEntrySet;
 import net.mehvahdjukaar.every_compat.modules.EveryCompatModule;
 import net.mehvahdjukaar.moonlight.api.platform.RegHelper;
 import net.mehvahdjukaar.moonlight.api.set.BlockType;
 import net.mehvahdjukaar.moonlight.api.set.wood.VanillaWoodTypes;
 import net.mehvahdjukaar.moonlight.api.set.wood.WoodType;
-import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -20,8 +20,8 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
-
-import static de.pnku.more_barrel_variants.MoreBarrelVariants.*;
+import static de.pnku.more_barrel_variants.MoreBarrelVariants.MOD_ID;
+import static de.pnku.more_barrel_variants.MoreBarrelVariants.withModId;
 import static de.pnku.more_barrel_variants.init.MoreBarrelBlocks.OAK_BARREL;
 
 public class MoreBarrelEveryCompat {
@@ -59,7 +59,7 @@ public class MoreBarrelEveryCompat {
         }
         @Override
         public boolean isEntryAlreadyRegistered(String entrySetId, ResourceLocation blockId, BlockType blockType, Registry<?> registry) {
-            // Preventing Pale Oak Barrels already added by "More Variants: Pale Oak Barrel"
+            // Preventing Pale Oak Barrels already added by "More Variants: Pale Oak Backport"
             if (blockId.getPath().endsWith("pale_oak_barrel")) return true;
             else return super.isEntryAlreadyRegistered(entrySetId, blockId, blockType, registry);
         }
