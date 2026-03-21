@@ -6,6 +6,7 @@ import de.pnku.more_barrel_variants.init.MoreBarrelItems;
 import net.mehvahdjukaar.every_compat.api.EveryCompatAPI;
 import net.mehvahdjukaar.every_compat.api.SimpleEntrySet;
 import net.mehvahdjukaar.every_compat.api.SimpleModule;
+import net.mehvahdjukaar.every_compat.modules.EveryCompatModule;
 import net.mehvahdjukaar.moonlight.api.platform.RegHelper;
 import net.mehvahdjukaar.moonlight.api.set.BlockType;
 import net.mehvahdjukaar.moonlight.api.set.wood.VanillaWoodTypes;
@@ -22,6 +23,9 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import static de.pnku.more_barrel_variants.MoreBarrelVariants.MOD_ID;
 import static de.pnku.more_barrel_variants.MoreBarrelVariants.withModId;
 import static de.pnku.more_barrel_variants.init.MoreBarrelBlocks.OAK_BARREL;
+import static de.pnku.more_barrel_variants.poi.MoreBarrelPointOfInterestTypes.addBarrelsToPoi;
+import static de.pnku.more_barrel_variants.poi.MoreBarrelPointOfInterestTypes.barrelsContainPoi;
+import static org.apache.logging.log4j.LogManager.getLogger;
 
 public class MoreBarrelEveryCompat {
     public static void init() {
@@ -65,8 +69,14 @@ public class MoreBarrelEveryCompat {
 
         @Override
         public void onModSetup() {
+            String loggerId = MOD_ID + " (EC)";
+            if (!barrelSet.blocks.isEmpty() && !barrelsContainPoi(barrelSet.blocks.values().stream().toList())) {
+                addBarrelsToPoi(barrelSet.blocks.values().stream().toList());
+                if (barrelsContainPoi(barrelSet.blocks.values().stream().toList())) {
+                    getLogger(loggerId).info("Compat Barrels have successfully been registered as valid Villager Job Site Block for Fishermen.");
+                } else getLogger(loggerId).warn("Compat Barrels could not be registered as valid Villager Job Site Block for Fishermen. This is a known but rare issue and can usually be fixed by restarting the game.\n=================================================================== In case a restart does not fix the issue, please report this to pnku via Github (pnk2u/More-Barrel-Variants), Email (contact@pnku.de) or Discord (discord.lieonlion.dev).");
+            } else if (barrelSet.blocks.isEmpty()) getLogger(loggerId).warn("Could not find registered Compat Barrels, unable to register as POI. This should not happen unless none of your installed mods add non-vanilla Wood Types.\n==================================================================== If you do have such mods installed while receiving this warning, please report this to pnku via Github (pnk2u/More-Barrel-Variants), Email (contact@pnku.de) or Discord (discord.lieonlion.dev).");
             super.onModSetup();
-            RegHelper.addBlocksToPOI(PoiTypes.FISHERMAN, barrelSet.blocks.values());
         }
     }
 }

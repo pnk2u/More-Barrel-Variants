@@ -17,6 +17,29 @@ import java.util.Map;
 
 public class MoreBarrelPointOfInterestTypes {
     public static void init() {
+        addBarrelsToPoi(MoreBarrelBlocks.more_barrels);
+    }
+
+    public static boolean barrelsContainPoi(List<Block> barrels) {
+        Map<BlockState, Holder<PoiType>> poiStatesToType = PoiTypesAccessor
+                .getPointOfInterestStatesToType();
+
+        Holder<PoiType> fishermanEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
+                .getHolder(PoiTypes.FISHERMAN).get();
+
+        for (Block block : barrels) {
+            ImmutableList<BlockState> blockStates = block.getStateDefinition().getPossibleStates();
+
+            for (BlockState blockState : blockStates) {
+                if (poiStatesToType.get(blockState) == fishermanEntry) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public static void addBarrelsToPoi(List<Block> barrels) {
         Map<BlockState, Holder<PoiType>> poiStatesToType = PoiTypesAccessor
                 .getPointOfInterestStatesToType();
 
@@ -27,7 +50,7 @@ public class MoreBarrelPointOfInterestTypes {
 
         List<BlockState> fishermanBlockStates = new ArrayList<BlockState>(fishermanPoiType.matchingStates);
 
-        for (Block block : MoreBarrelBlocks.more_barrels) {
+        for (Block block : barrels) {
             ImmutableList<BlockState> blockStates = block.getStateDefinition().getPossibleStates();
 
             for (BlockState blockState : blockStates) {
