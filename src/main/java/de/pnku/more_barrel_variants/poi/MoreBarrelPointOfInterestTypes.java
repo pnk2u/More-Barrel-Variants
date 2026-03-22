@@ -25,7 +25,7 @@ public class MoreBarrelPointOfInterestTypes {
                 .getPointOfInterestStatesToType();
 
         Holder<PoiType> fishermanEntry = BuiltInRegistries.POINT_OF_INTEREST_TYPE
-                .getHolder(PoiTypes.FISHERMAN).get();
+                .get(PoiTypes.FISHERMAN).get();
 
         for (Block block : barrels) {
             ImmutableList<BlockState> blockStates = block.getStateDefinition().getPossibleStates();
