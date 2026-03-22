@@ -49,9 +49,12 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 
-	// Compatibility with Every Compat ("everycomp" modid, slug for own maven - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
+	// Compatibility with Every Compat ("everycomp" modid, slug for maven with docs - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
 		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
 		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:everycomp-fabric:${every_compat_version}:fabric") { transitive = false }
+		// Above for docs, if needed - below in case above's maven is down
+					   //modCompileOnly("maven.modrinth:moonlight:${moonlight_version}-fabric")
+					   //modCompileOnly("maven.modrinth:every-compat:${every_compat_version}-fabric")
 		// Testing
 //		modRuntimeOnly("maven.modrinth:wilder-wild:${wilder_wild_version}-mc${project.minecraft_version}")
 //			modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
