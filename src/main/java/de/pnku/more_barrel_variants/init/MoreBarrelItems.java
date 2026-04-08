@@ -49,6 +49,7 @@ public class MoreBarrelItems {
             Item previousBarrel = i == 0 ? Items.BARREL : more_barrels.get(i - 1);
             String barrelName = ((MoreBarrelBlock) ((BlockItem) barrel).getBlock()).barrelWoodType + "_barrel";
             Registry.register(BuiltInRegistries.ITEM, withModId(barrelName), barrel);
+            BuiltInRegistries.ITEM.addAlias(withModId(barrelName, true), withModId(barrelName));
           ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(entries -> entries.addAfter(previousBarrel, barrel));
         }
     }

@@ -20,8 +20,10 @@ public class MoreBarrelVariants implements ModInitializer {
         initECModule();
     }
 
-    public static ResourceLocation withModId(String path) {
-        return new ResourceLocation(MOD_ID, path);
+    public static ResourceLocation withModId(String path) {return withModId(path, false);}
+
+    public static ResourceLocation withModId(String path, boolean legacy) {
+        return new ResourceLocation(legacy ? LEGACY_MOD_ID : MOD_ID, path);
     }
 
     private void initECModule() {
