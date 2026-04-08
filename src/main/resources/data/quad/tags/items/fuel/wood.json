@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "lolmblv:oak_barrel",
-    "lolmblv:birch_barrel",
-    "lolmblv:jungle_barrel",
-    "lolmblv:acacia_barrel",
-    "lolmblv:dark_oak_barrel",
-    "lolmblv:mangrove_barrel",
-    "lolmblv:cherry_barrel",
-    "lolmblv:bamboo_barrel"
+    "more_barrel_variants:oak_barrel",
+    "more_barrel_variants:birch_barrel",
+    "more_barrel_variants:jungle_barrel",
+    "more_barrel_variants:acacia_barrel",
+    "more_barrel_variants:dark_oak_barrel",
+    "more_barrel_variants:mangrove_barrel",
+    "more_barrel_variants:cherry_barrel",
+    "more_barrel_variants:bamboo_barrel"
   ]
 }

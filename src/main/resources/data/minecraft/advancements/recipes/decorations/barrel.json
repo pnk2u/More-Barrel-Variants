@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:vanilla_barrel_from_spruce_recipe"
+        "recipe": "more_barrel_variants:vanilla_barrel_from_spruce_recipe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:vanilla_barrel_from_spruce_recipe"
+      "more_barrel_variants:vanilla_barrel_from_spruce_recipe"
     ]
   }
 }

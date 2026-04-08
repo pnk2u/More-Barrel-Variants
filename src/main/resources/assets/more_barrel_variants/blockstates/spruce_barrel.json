@@ -1,54 +1,54 @@
 {
     "variants": {
         "facing=down,open=false": {
-            "model": "lolmblv:block/spruce_barrel",
+            "model": "more_barrel_variants:block/spruce_barrel",
             "x": 180
         },
         "facing=down,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open",
+            "model": "more_barrel_variants:block/spruce_barrel_open",
             "x": 180
         },
         "facing=east,open=false": {
-            "model": "lolmblv:block/spruce_barrel",
+            "model": "more_barrel_variants:block/spruce_barrel",
             "x": 90,
             "y": 90
         },
         "facing=east,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open",
+            "model": "more_barrel_variants:block/spruce_barrel_open",
             "x": 90,
             "y": 90
         },
         "facing=north,open=false": {
-            "model": "lolmblv:block/spruce_barrel",
+            "model": "more_barrel_variants:block/spruce_barrel",
             "x": 90
         },
         "facing=north,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open",
+            "model": "more_barrel_variants:block/spruce_barrel_open",
             "x": 90
         },
         "facing=south,open=false": {
-            "model": "lolmblv:block/spruce_barrel",
+            "model": "more_barrel_variants:block/spruce_barrel",
             "x": 90,
             "y": 180
         },
         "facing=south,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open",
+            "model": "more_barrel_variants:block/spruce_barrel_open",
             "x": 90,
             "y": 180
         },
         "facing=up,open=false": {
-            "model": "lolmblv:block/spruce_barrel"
+            "model": "more_barrel_variants:block/spruce_barrel"
         },
         "facing=up,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open"
+            "model": "more_barrel_variants:block/spruce_barrel_open"
         },
         "facing=west,open=false": {
-            "model": "lolmblv:block/spruce_barrel",
+            "model": "more_barrel_variants:block/spruce_barrel",
             "x": 90,
             "y": 270
         },
         "facing=west,open=true": {
-            "model": "lolmblv:block/spruce_barrel_open",
+            "model": "more_barrel_variants:block/spruce_barrel_open",
             "x": 90,
             "y": 270
         }

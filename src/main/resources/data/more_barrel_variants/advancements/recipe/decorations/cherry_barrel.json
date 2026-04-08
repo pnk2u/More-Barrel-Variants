@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:cherry_barrel"
+        "recipe": "more_barrel_variants:cherry_barrel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:cherry_barrel"
+      "more_barrel_variants:cherry_barrel"
     ]
   },
   "sends_telemetry_event": false

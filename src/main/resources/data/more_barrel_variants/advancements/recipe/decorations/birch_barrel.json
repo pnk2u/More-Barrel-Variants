@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:birch_barrel"
+        "recipe": "more_barrel_variants:birch_barrel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:birch_barrel"
+      "more_barrel_variants:birch_barrel"
     ]
   },
   "sends_telemetry_event": false

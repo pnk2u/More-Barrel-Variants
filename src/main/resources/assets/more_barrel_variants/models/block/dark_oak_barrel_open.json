@@ -1,9 +1,9 @@
 {
     "parent": "minecraft:block/cube_bottom_top",
     "textures": {
-        "bottom": "lolmblv:block/dark_oak_barrel_bottom",
-        "side": "lolmblv:block/dark_oak_barrel_side",
-        "top": "lolmblv:block/dark_oak_barrel_top_open",
+        "bottom": "more_barrel_variants:block/dark_oak_barrel_bottom",
+        "side": "more_barrel_variants:block/dark_oak_barrel_side",
+        "top": "more_barrel_variants:block/dark_oak_barrel_top_open",
         "particle": "minecraft:block/dark_oak_planks"
     }
 }

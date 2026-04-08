@@ -4,70 +4,70 @@
       "structures": "#quad:is/oak",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:oak_barrel"
+        "replacement": "more_barrel_variants:oak_barrel"
       }
     },
     {
       "structures": "#quad:is/birch",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:birch_barrel"
+        "replacement": "more_barrel_variants:birch_barrel"
       }
     },
     {
       "structures": "#quad:is/jungle",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:jungle_barrel"
+        "replacement": "more_barrel_variants:jungle_barrel"
       }
     },
     {
       "structures": "#quad:is/acacia",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:acacia_barrel"
+        "replacement": "more_barrel_variants:acacia_barrel"
       }
     },
     {
       "structures": "#quad:is/dark_oak",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:dark_oak_barrel"
+        "replacement": "more_barrel_variants:dark_oak_barrel"
       }
     },
     {
       "structures": "#quad:is/mangrove",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:mangrove_barrel"
+        "replacement": "more_barrel_variants:mangrove_barrel"
       }
     },
     {
       "structures": "#quad:is/cherry",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:cherry_barrel"
+        "replacement": "more_barrel_variants:cherry_barrel"
       }
     },
     {
       "structures": "#quad:is/bamboo",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:bamboo_barrel"
+        "replacement": "more_barrel_variants:bamboo_barrel"
       }
     },
     {
       "structures": "#quad:is/crimson",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:crimson_barrel"
+        "replacement": "more_barrel_variants:crimson_barrel"
       }
     },
     {
       "structures": "#quad:is/warped",
       "block_replacement": {
         "targets": "minecraft:barrel",
-        "replacement": "lolmblv:warped_barrel"
+        "replacement": "more_barrel_variants:warped_barrel"
       }
     }
   ]

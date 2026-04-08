@@ -9,7 +9,8 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 
 public class MoreBarrelVariants implements ModInitializer {
-    public static final String MOD_ID = "lolmblv";
+    public static final String MOD_ID = "more_barrel_variants";
+    public static final String LEGACY_MOD_ID = "lolmblv";
 
     @Override
     public void onInitialize() {

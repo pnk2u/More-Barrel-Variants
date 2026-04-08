@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lolmblv:oak_barrel"
+        "recipe": "more_barrel_variants:oak_barrel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lolmblv:oak_barrel"
+      "more_barrel_variants:oak_barrel"
     ]
   },
   "sends_telemetry_event": false
