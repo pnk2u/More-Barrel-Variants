@@ -48,7 +48,7 @@ dependencies {
 		parchment("org.parchmentmc.data:parchment-${pMinecraftVersion}:${mostRecentParchmentDate}@zip")
 	}
 	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:0.92.8+local-1.20.1"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 
 	// Compatibility with Every Compat ("everycomp" modid, slug for maven with docs - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
 		modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
