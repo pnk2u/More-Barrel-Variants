@@ -1,4 +1,4 @@
-<!--publish=false-->
+<!--publish=true-->
 ### 2.0.3:
 - Fix _Barrel_ Variants tag usage (since `2.0.0`) which lead to the following two issues:
   - Not having a correct _Tool_ (_Axes_) that allows for faster mining
