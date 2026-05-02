@@ -1,4 +1,4 @@
-<!--publish=false-->
+<!--publish=true-->
 ### 2.0.3:
 - Fix _Barrel_ Variants not having an associate correct _Tool_ (_Axes_) that allows for faster mining (since `2.0.0`)
 - `1.20.1`: 
