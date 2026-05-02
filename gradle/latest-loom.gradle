@@ -4,7 +4,9 @@ static def fetchLatestLoom() {
     def url = "https://maven.fabricmc.net/net/fabricmc/fabric-loom/maven-metadata.xml"
     try {
         def metadata = new XmlSlurper().parse(url)
-        return metadata.versioning.latest.text()
+        def versions = metadata.versioning.versions.version*.text()
+        def sorted = versions.findAll { it ==~ /\d+(\.\d+)*-SNAPSHOT/ }
+        return sorted.last()
     } catch (Exception e) {
         throw new GradleException("Failed to fetch $url: ${e.message}")
     }}

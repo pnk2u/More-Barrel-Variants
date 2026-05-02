@@ -3,26 +3,26 @@
 - `1.20.1`, `1.21(.1)`: Fix _Barrels_ from <ins>Every Compat</ins> (&#x200A;<sub><a title="Every Compat&#10;on Modrinth" href="https://modrinth.com/mod/every-compat/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:GH--><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Every Compat&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/every-compat/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) _sometimes_ not being usable by _Villagers_ to become _Fishermen_
 - Fix vanilla _Barrels_' container title not showing as their variant name "_**Spruce** Barrel_"
 
-  <h2><sub><sub><sup><ins>Download 2.0.2 + 1.21.4(-11)</ins>:</sup>&#x200A;
-  <a title="Download (Modrinth):&#10;More Barrel Variants 2.0.2 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/OMJD6CzO">
-  <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
-  <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-  <a title="Download (Curseforge):&#10;2.0.2 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7793789">
-  <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
-  </sub></sub></h2>
+<h2><sub><sub><sup><ins>Download 2.0.2 + 1.21.4(-11)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.0.2 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/OMJD6CzO">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;2.0.2 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7793789">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
 
 <a name="2.0.1"></a>
 ### 2.0.1:
 - Add Japanese translation (Thanks to [@HayaKoh-WeldyAlin](https://www.github.com/HayaKoh-WeldyAlin))
 - `1.20.1`: Fix Barrels from <ins>Every Compat</ins> (&#x200A;<sub><a title="Every Compat&#10;on Modrinth" href="https://modrinth.com/mod/every-compat/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:GH--><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Every Compat&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/every-compat/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) not being usable by _Villagers_ to become _Fishermen_
 
-  <h2><sub><sub><sup><ins>Download 2.0.1 + 1.21.4(-11)</ins>:</sup>&#x200A;
-  <a title="Download (Modrinth):&#10;More Barrel Variants 2.0.1 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/IpBEFIyK">
-  <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
-  <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-  <a title="Download (Curseforge):&#10;2.0.1 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7785327">
-  <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
-  </sub></sub></h2>
+<h2><sub><sub><sup><ins>Download 2.0.1 + 1.21.4(-11)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.0.1 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/IpBEFIyK">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;2.0.1 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7785327">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
 
 <a name="2.0.0"></a>
 # 2.0.0:
@@ -39,13 +39,13 @@
 <br></br>
 <sub>License update to [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (previously [MIT](https://opensource.org/licenses/MIT))</sub>
 
-  <h2><sub><sub><sup><ins>Download 2.0.0 + 1.21.4(-11)</ins>:</sup>&#x200A;
-  <a title="Download (Modrinth):&#10;More Barrel Variants 2.0.0 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/sfG02kZW">
-  <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
-  <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-  <a title="Download (Curseforge):&#10;2.0.0 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7782105">
-  <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
-  </sub></sub></h2>
+<h2><sub><sub><sup><ins>Download 2.0.0 + 1.21.4(-11)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.0.0 + 1.21.4(-11)" href="https://www.modrinth.com/mod/g4AhyGgi/version/sfG02kZW">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;2.0.0 + 1.21.4(-11) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/7782105">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
 
 ## 1.8.0:
 - `1.21.4(-9)`: Update to 1.21.9 and combining previous versions `1.21.4`, `1.21.5` and `1.21.6(-8)`
