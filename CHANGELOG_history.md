@@ -1,3 +1,15 @@
+<a name="2.0.4"></a>
+### 2.0.4:
+- `1.21.4(-11)`, `26.1`: Apply tag fixes from `2.0.3` to _**Pale Oak** Barrels_
+
+
+<h2><sub><sub><sup><ins>Download 2.0.4 + 26.1</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.0.4 + 26.1" href="https://www.modrinth.com/mod/g4AhyGgi/version/Fzyzz2Lp">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;2.0.4 + 26.1 - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/8029637">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.0.3"></a>
 ### 2.0.3:
 - Fix _Barrel_ Variants tag usage (since `2.0.0`) which lead to the following two issues:
