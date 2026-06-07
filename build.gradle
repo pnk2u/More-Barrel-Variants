@@ -1,53 +1,72 @@
+buildscript {
+	repositories {maven {url = 'https://maven.fabricmc.net/'}}
+	apply from: "versions.gradle"
+	def (loomGroupId, loomArtifactId, loomVersion, loomBaseId) = getFabricLoom(project.minecraft_version)
+	def minecraftRelease = getMinecraftReleaseVersion(minecraft_version)
+	def (fabricLoaderVersion, minFabricLoaderVersion, fabricApiVersion) = getLatestFabricVersions(minecraftRelease)
+	def (parchmentMcVersion, parchmentDate) = getLatestParchmentVersions(minecraftRelease)
+	def (minMinecraftVersionExcl, maxMinecraftVersionExcl) = getMinecraftVersionExclRange(minecraft_version_min_excl, minecraft_version_max_excl)
+	def (javaVersionNum, javaVersionEnum) = getJavaVersions(minecraftRelease)
+	dependencies {
+		classpath "$loomGroupId:$loomArtifactId:$loomVersion"
+	}
+	ext {
+		ext.loomPluginBaseId = loomBaseId
+		ext.minecraftRelease = minecraftRelease
+		ext.fabricLoaderVersion = fabricLoaderVersion
+		ext.minFabricLoaderVersion = minFabricLoaderVersion
+		ext.fabricApiVersion = fabricApiVersion
+		ext.parchmentMcVersion = parchmentMcVersion
+		ext.parchmentDate = parchmentDate
+		ext.minMinecraftVersionExcl = minMinecraftVersionExcl
+		ext.maxMinecraftVersionExcl = maxMinecraftVersionExcl
+		ext.javaVersionNum = javaVersionNum
+		ext.javaVersionEnum = javaVersionEnum
+	}
+}
 plugins {
-	id 'fabric-loom' // version from latest-loom.gradle via settings.gradle's pluginManagement
-	id 'maven-publish'
+	id 'dev.isxander.mtk.modrepos'
 }
 
-apply from: "gradle/versions.gradle"
-apply from: "gradle/validation.gradle"
+apply plugin: "${loomPluginBaseId}"
+apply from: "versions.gradle"
+apply plugin: "dev.isxander.mtk.modrepos"
 
-def mc_version_name(){
+def getMinecraftVersionName(){
 	String key = 'minecraft_version_name'
 	if (project.hasProperty(key)) {String value = project.getProperties().get(key); return !value.isEmpty() ? value : project.minecraft_version}
 	else {return project.minecraft_version}
 }
-version = "${mod_version}+${mc_version_name()}-Fabric"
-group = project.mod_group_id
+version = "${mod_version}+${getMinecraftVersionName()}-Fabric"
+group = project.group_id
 
 base {
-	archivesName = archives_base_name
+	archivesName = project.archives_base_name
 }
 
 repositories {
-	maven {
-		name = 'ParchmentMC'
-		url = 'https://maven.parchmentmc.org'
-	}
-	maven {
-		name = 'Modrinth'
-		url = 'https://api.modrinth.com/maven'
-	}
+	parchment()
+	modrinthApi.exclusive()
 	maven {
 		name = 'SomethingSketchy' // EveryCompat, Moonlight
 		url = "https://registry.somethingcatchy.net/repository/maven-releases/"
 	}
 }
 
-
 loom {
-	accessWidenerPath = file("src/main/resources/${mod_id}.accesswidener")
+	accessWidenerPath = file("src/main/resources/${mod_id}.classtweaker")
+	log4jConfigs.from(file("log4j.xml"))
 }
-
 
 dependencies {
 	implementation 'org.apache.commons:commons-text:1.12.0'
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings loom.layered() {
 		officialMojangMappings()
-		parchment("org.parchmentmc.data:parchment-${pMinecraftVersion}:${mostRecentParchmentDate}@zip")
+		parchment("org.parchmentmc.data:parchment-${parchmentMcVersion}:${parchmentDate}@zip")
 	}
-	modImplementation "net.fabricmc:fabric-loader:${fabric_loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+	modImplementation "net.fabricmc:fabric-loader:${fabricLoaderVersion}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabricApiVersion}"
 
 	// Compatibility with Every Compat ("everycomp" modid, slug for maven with docs - "MehVahdJukaar/WoodGood" repo - "every-compat" slug mr/cf)
 		//modRuntimeOnly modCompileOnly("net.mehvahdjukaar:moonlight-fabric:${moonlight_version}:fabric") { transitive = false }
@@ -60,47 +79,41 @@ dependencies {
 			//modRuntimeOnly("maven.modrinth:frozenlib:${frozen_lib_version}-mc${project.minecraft_version}")
 }
 
+def replaceProperties = [
+		project_name: project.name, archives_base_name: archives_base_name, group_id: group_id,
+		mod_id: mod_id, mod_name: mod_name, mod_description: mod_description, mod_license: mod_license,
+		mod_version: mod_version,
+		minFabricLoaderVersion: minFabricLoaderVersion,
+		minMinecraftVersionExcl: minMinecraftVersionExcl, maxMinecraftVersionExcl: maxMinecraftVersionExcl, javaVersion: javaVersionNum,
+		modrinth_project_id: modrinth_project_id, curseforge_project_id: curseforge_project_id
+]
+println "===\nExpanding the following values into fabric.mod.json and *.mixins.json:\n${replaceProperties.collect { k, v -> "  ${k}: ${v}" }.join('\n')}\n==="
 
-processResources {
-	var fabric_loader_version_0 = version_reduced(fabric_loader_version)
 
-	var replaceProperties = [
-			loader_version: fabric_loader_version_0, mod_id: mod_id, mod_name: mod_name,
-			mod_license: mod_license, mod_version: mod_version, mod_description: mod_description,
-			minecraft_version: minecraft_version, minecraft_version_0: minecraft_version_0(), minecraft_version_1: minecraft_version_1(),
-			java_version: java_version
-	]
-	inputs.properties replaceProperties
+["processResources"].each { taskName ->
+	tasks.named(taskName) {
+		inputs.properties replaceProperties
 
-	filesMatching("fabric.mod.json") {
-		expand replaceProperties
-	}
-	filesMatching("*.mixins.json") {
-		expand replaceProperties
+		filesMatching("fabric.mod.json") {
+			expand replaceProperties
+		}
+		filesMatching("*.mixins.json") {
+			expand replaceProperties
+		}
 	}
 }
 
-
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = java_version
+	it.options.release = javaVersionNum
 }
 
 java {
-	sourceCompatibility = java_version_enum
-	targetCompatibility = java_version_enum
+	sourceCompatibility = javaVersionEnum
+	targetCompatibility = javaVersionEnum
 }
 
 jar {
 	from("LICENSE") {
-		rename { "${project.base.archivesName.get()}_${it}"}
+		rename { "${it}_${project.base.archivesName.get()}"}
 	}
-}
-
-publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
-	repositories {}
 }

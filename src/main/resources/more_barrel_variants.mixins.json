@@ -1,7 +1,7 @@
 {
   "required": true,
-  "package": "de.pnku.more_barrel_variants.mixin",
-  "compatibilityLevel": "JAVA_${java_version}",
+  "package": "${group_id}.${mod_id}.mixin",
+  "compatibilityLevel": "JAVA_${javaVersion}",
   "mixins": [
     "BarrelBlockEntityMixin",
     "PoiTypesAccessor"
