@@ -109,10 +109,23 @@ def getLatestParchmentVersions(releaseVersion) {
 	return [foundVersion, parchmentDate]
 }
 
-static def getJavaVersions(releaseVersion) {
-	def javaVersion = "$releaseVersion".startsWith('1.20') ? 17 : ("$releaseVersion".startsWith('1.21') ? 21 : 25)
-	def javaVersionEnum = JavaVersion.toVersion(javaVersion)
-	return [javaVersion, javaVersionEnum]
+static def getJavaVersions(gameVersion) {
+	try {
+		def manifestUrl = 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
+		def manifest = new JsonSlurper().parse(new URI(manifestUrl).toURL())
+		def versionEntry = manifest.versions.find { it.id == gameVersion.toString() }
+		if (versionEntry) {
+			def versionJson = new JsonSlurper().parse(new URI(versionEntry.url).toURL())
+			if (versionJson.javaVersion && versionJson.javaVersion.majorVersion) {
+				def javaVersion = versionJson.javaVersion.majorVersion as Integer
+				return [javaVersion, JavaVersion.toVersion(javaVersion)]
+			}
+		}
+	} catch (Exception e) {
+		println "Failed to fetch Java version from Mojang: ${e.message}. Using fallback."
+		def javaVersion = "$gameVersion".startsWith('1.20') ? 17 : ("$gameVersion".startsWith('1.21') ? 21 : 25)
+		return [javaVersion, JavaVersion.toVersion(javaVersion)]
+	}
 }
 
 ext.getFabricLoom = this.&getFabricLoom as MethodClosure
