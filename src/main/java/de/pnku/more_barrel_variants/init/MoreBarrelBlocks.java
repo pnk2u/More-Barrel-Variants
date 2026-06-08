@@ -6,10 +6,11 @@ import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityT
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.material.MapColor;
 
 import java.util.List;
@@ -51,7 +52,11 @@ public class MoreBarrelBlocks {
             Registry.register(BuiltInRegistries.BLOCK, withModId(barrelName), barrel);
             // mod_id change from lolmblv to more_barrel_variants - alias for backwards compatibility
                 BuiltInRegistries.BLOCK.addAlias(withModId(barrelName, true), withModId(barrelName));
-            BlockEntityType.BARREL.addValidBlock(barrel);
+            BuiltInRegistries.BLOCK_ENTITY_TYPE.get(
+                    ResourceKey.create(Registries.BLOCK_ENTITY_TYPE, Identifier.withDefaultNamespace("barrel"))
+            ).ifPresent(blockEntityType ->
+                    blockEntityType.value().addValidBlock(barrel)
+            );
         }
     }
 }
