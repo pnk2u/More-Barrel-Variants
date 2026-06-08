@@ -6,7 +6,7 @@ buildscript {
 	def (fabricLoaderVersion, minFabricLoaderVersion, fabricApiVersion) = getLatestFabricVersions(minecraftRelease)
 	def (parchmentMcVersion, parchmentDate) = getLatestParchmentVersions(minecraftRelease)
 	def (minMinecraftVersionExcl, maxMinecraftVersionExcl) = getMinecraftVersionExclRange(minecraft_version_min_excl, minecraft_version_max_excl)
-	def (javaVersionNum, javaVersionEnum) = getJavaVersions(minecraftRelease)
+	def (javaVersionNum, javaVersionEnum) = getJavaVersions(minecraft_version)
 	dependencies {
 		classpath "$loomGroupId:$loomArtifactId:$loomVersion"
 	}
