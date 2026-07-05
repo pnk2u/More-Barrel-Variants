@@ -19,7 +19,7 @@
   "container.more_barrel_variants.bamboo_barrel": "竹の樽" ,
   "container.more_barrel_variants.crimson_barrel": "真紅の樽" ,
   "container.more_barrel_variants.warped_barrel": "歪んだ樽",
-  "block_type.more_barrel_variants.barrel": "%sの樽",
+  "block_type.more_barrel_variants.barrel": "%s樽",
   "tag.item.more_barrel_variants.barrels": "樽のバリエーション",
   "tag.item.lieonstudios.barrels": "樽のバリエーション"
 }
