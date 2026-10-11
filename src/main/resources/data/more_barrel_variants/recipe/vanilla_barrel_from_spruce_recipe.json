@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "tag": "lolmcbv:vanilla_chiseled_bookshelf_planks"
+      "tag": "more_barrel_variants:vanilla_barrel_planks"
     },
     "-": {
-      "tag": "lolmcbv:vanilla_chiseled_bookshelf_slabs"
+      "tag": "more_barrel_variants:vanilla_barrel_slabs"
     }
   },
   "result": {
