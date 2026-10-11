@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "more_barrel_variants:bamboo_barrel"
+        "recipes": "more_barrel_variants:bamboo_barrel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:warped_barrel_from_warped_stems_woodcutting"
+        "recipes": "minecraft:warped_barrel_from_warped_stems_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cherry_barrel_from_cherry_logs_woodcutting"
+        "recipes": "minecraft:cherry_barrel_from_cherry_logs_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

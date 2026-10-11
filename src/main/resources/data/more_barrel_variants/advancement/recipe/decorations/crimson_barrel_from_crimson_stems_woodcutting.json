@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:crimson_barrel_from_crimson_stems_woodcutting"
+        "recipes": "minecraft:crimson_barrel_from_crimson_stems_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

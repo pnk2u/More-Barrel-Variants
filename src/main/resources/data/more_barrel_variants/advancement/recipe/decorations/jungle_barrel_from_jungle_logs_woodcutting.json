@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:jungle_barrel_from_jungle_logs_woodcutting"
+        "recipes": "minecraft:jungle_barrel_from_jungle_logs_woodcutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
