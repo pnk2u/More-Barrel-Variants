@@ -1,3 +1,26 @@
+<a name="2.1.0"></a>
+## 2.1.0:
+- `26.3`:
+    - Update to <ins>26.3</ins>
+    - Add _**Poplar** Barrel_ (Textures by [hunnycakehorse](https://www.modrinth.com/user/hunnycakehorse))
+    - Implement _Tag Entry Removal_ in _(Vanilla/)**Spruce** Barrel_ recipe
+  >    #### What this means:
+  >   - _(Vanilla/)**Spruce** Barrels_ can now be crafted natively with any modded Planks as well as _**Spruce** Planks_.
+  >   - _More Compatibility Variants_ datapacks are no longer necessary for this mod.
+  >- For this functionality the latest <ins>Fabric API</ins> (&#x200A;<sub><a title="Fabric API&#10;on Modrinth" href="https://modrinth.com/mod/fabric-api/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Fabric API&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) version is required before <ins>26.1.2</ins> and is available for the following versions:
+     >   |Game Version|Minimum Fabric Version|
+     >   |-|-|
+     >   |<ins>1.20.1</ins> |[`0.92.11`](https://modrinth.com/mod/fabric-api/version/0.92.11+1.20.1)  |
+     >   |<ins>1.21.1</ins> |[`0.116.14`](https://modrinth.com/mod/fabric-api/version/0.116.14+1.21.1)|
+     >   |<ins>1.21.11</ins>|[`0.141.5`](https://modrinth.com/mod/fabric-api/version/0.141.5+1.21.11) |
+
+<h2><sub><sub><sup><ins>Download 2.1.0 + 1.20.1</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.1.0 + 1.20.1" href="https://www.modrinth.com/mod/g4AhyGgi/version/iyviR0Ll">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;2.1.0 + 1.20.1 - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/9134623">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.0.6"></a>
 ### 2.0.6:
 - `1.20.1`, `1.21(.1)`: Update Japanese translation of <ins>Every Compat</ins> (&#x200A;<sub><a title="Every Compat&#10;on Modrinth" href="https://modrinth.com/mod/every-compat/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Every Compat&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/every-compat/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) compatibility (Thanks to [HayaKoh-WeldyAlin](/../../../../HayaKoh-WeldyAlin))
