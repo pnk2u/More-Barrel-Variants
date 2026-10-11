@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:spruce_planks"
+      "tag": "lolmcbv:vanilla_chiseled_bookshelf_planks"
     },
     "-": {
-      "item": "minecraft:spruce_slab"
+      "tag": "lolmcbv:vanilla_chiseled_bookshelf_slabs"
     }
   },
   "result": {
