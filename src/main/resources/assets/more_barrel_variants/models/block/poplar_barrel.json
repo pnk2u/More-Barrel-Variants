@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": {
+        "bottom": "more_barrel_variants:block/poplar_barrel_bottom",
+        "side": "more_barrel_variants:block/poplar_barrel_side",
+        "top": "more_barrel_variants:block/poplar_barrel_top",
+        "particle": "minecraft:block/poplar_planks"
+    }
+}
