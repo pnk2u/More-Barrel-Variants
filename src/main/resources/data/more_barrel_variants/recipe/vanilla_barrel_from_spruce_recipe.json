@@ -7,8 +7,8 @@
     "#-#"
   ],
   "key": {
-    "#": "#lolmcbv:vanilla_chiseled_bookshelf_planks",
-    "-": "#lolmcbv:vanilla_chiseled_bookshelf_slabs"
+    "#": "#more_barrel_variants:vanilla_barrel_planks",
+    "-": "#more_barrel_variants:vanilla_barrel_slabs"
   },
   "result": {
     "count": 1,
