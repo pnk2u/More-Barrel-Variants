@@ -7,8 +7,8 @@
     "#-#"
   ],
   "key": {
-    "#": "minecraft:spruce_planks",
-    "-": "minecraft:spruce_slab"
+    "#": "#lolmcbv:vanilla_chiseled_bookshelf_planks",
+    "-": "#lolmcbv:vanilla_chiseled_bookshelf_slabs"
   },
   "result": {
     "count": 1,
