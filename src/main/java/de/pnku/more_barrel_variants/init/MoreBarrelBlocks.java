@@ -24,6 +24,7 @@ public class MoreBarrelBlocks {
     public static final Block ACACIA_BARREL = new MoreBarrelBlock(MapColor.COLOR_ORANGE, "acacia");
     public static final Block DARK_OAK_BARREL = new MoreBarrelBlock(MapColor.COLOR_BROWN, "dark_oak");
     public static final Block PALE_OAK_BARREL = new MoreBarrelBlock(MapColor.QUARTZ, "pale_oak");
+    public static final Block POPLAR_BARREL = new MoreBarrelBlock(MapColor.COLOR_LIGHT_GRAY, "poplar");
     public static final Block MANGROVE_BARREL = new MoreBarrelBlock(MapColor.COLOR_RED, "mangrove");
     public static final Block CHERRY_BARREL = new MoreBarrelBlock(MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry");
     public static final Block BAMBOO_BARREL = new MoreBarrelBlock(MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo");
@@ -39,6 +40,7 @@ public class MoreBarrelBlocks {
             ACACIA_BARREL,
             DARK_OAK_BARREL,
             PALE_OAK_BARREL,
+            POPLAR_BARREL,
             MANGROVE_BARREL,
             CHERRY_BARREL,
             BAMBOO_BARREL,

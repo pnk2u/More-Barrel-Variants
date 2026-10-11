@@ -26,6 +26,7 @@ public class MoreBarrelItems {
     public static final Item ACACIA_BARREL = itemFromBlock(MoreBarrelBlocks.ACACIA_BARREL);
     public static final Item DARK_OAK_BARREL = itemFromBlock(MoreBarrelBlocks.DARK_OAK_BARREL);
     public static final Item PALE_OAK_BARREL = itemFromBlock(MoreBarrelBlocks.PALE_OAK_BARREL);
+    public static final Item POPLAR_BARREL = itemFromBlock(MoreBarrelBlocks.POPLAR_BARREL);
     public static final Item MANGROVE_BARREL = itemFromBlock(MoreBarrelBlocks.MANGROVE_BARREL);
     public static final Item CHERRY_BARREL = itemFromBlock(MoreBarrelBlocks.CHERRY_BARREL);
     public static final Item BAMBOO_BARREL = itemFromBlock(MoreBarrelBlocks.BAMBOO_BARREL);
@@ -56,6 +57,7 @@ public class MoreBarrelItems {
             ACACIA_BARREL,
             DARK_OAK_BARREL,
             PALE_OAK_BARREL,
+            POPLAR_BARREL,
             MANGROVE_BARREL,
             CHERRY_BARREL,
             BAMBOO_BARREL,
