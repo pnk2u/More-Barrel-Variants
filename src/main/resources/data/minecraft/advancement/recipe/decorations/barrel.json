@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-     "has_planks": {
+    "has_barrels": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:spruce_planks"
-            ]
+            "items": "#lieonstudios:barrels"
           }
         ]
       },
@@ -21,14 +19,14 @@
     }
   },
   "requirements": [
-  [
-    "has_planks",
+    [
+      "has_barrels",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "more_barrel_variants:spruce_barrel"
+      "minecraft:barrel"
     ]
   },
   "sends_telemetry_event": false
