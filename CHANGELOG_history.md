@@ -1,3 +1,14 @@
+<a name="2.1.1"></a>
+### 2.1.1:
+- `1.21.4(-11)`, `26.1(-3)`: Fix _**Pale Oak**_ and _**Poplar** Barrel_ crafting recipes sometimes resulting in _(Vanilla/) **Spruce** Barrel_ (bug introduced in `2.1.0`)
+
+<h2><sub><sub><sup><ins>Download 2.1.1 + 26.1(2)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Barrel Variants 2.1.1 + 26.1(2)" href="https://www.modrinth.com/mod/g4AhyGgi/version/4uchvXKA">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;2.1.1 + 26.1(2) - More Barrel Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-barrel-variants/files/9195504">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.1.0"></a>
 ## 2.1.0:
 - `26.3`:
